@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(230,240,240,255);
+
+  }
+.picture{
+    
+}
+.container{
+    display: flex; /* or inline-flex */
+    flex-direction: row 
+}
+.survey{
+    font-family: sans-serif;
+
+}
+
