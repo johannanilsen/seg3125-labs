@@ -37,3 +37,10 @@ img{
     top: 50px;
     max-height: 55%
 }
+
+.signature{
+    position: fixed;
+    bottom:0;
+    font-family: Work Sans;
+    font-style: normal;
+}
