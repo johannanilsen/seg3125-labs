@@ -1,75 +1,96 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page</title>
-    </head>
+    <link rel="stylesheet" href="style2.css">
+</head>
 
-    <body>
-        <div class="container">
-        
-    <div class="picture"><img src="geegees.png" alt="geegee subreddit"></div>
+<body>
 
     <div class="survey">
-       <h1>Survey</h1>
-       <h2>How often do you use Reddit?</h2>
+        <h1>Survey</h1>
 
-       <div class="radios">
-        <input type="radio" id="very_often" name="usage" value="HTML">
-        <label for="html">Very Often</label><br>
-    
+        <div class="q1_a">
+            <h3>What is your name?</h3>
+            <input type="text"  id="fname" name="fname">
+            
+        </div>
 
-    
-        <input type="radio" id="often" name="usage" value="HTML">
-        <label for="html">Often</label><br>
-    
-
-    
-        <input type="radio" id="sometimes" name="usage" value="HTML">
-        <label for="html">Sometimes</label><br>
-    
-
-    
-        <input type="radio" id="rarely" name="usage" value="HTML">
-        <label for="html">Rarely</label><br>
-    
-    
-    
-        <input type="radio" id="never" name="usage" value="HTML">
-        <label for="html">Never</label><br>
-       </div>
-    
-       <h2>Which of the following actions have you taken on Reddit? (Select all that apply)</h2>
-
-       <input type="checkbox" id="create_post" name="vehicle1" value="Bike">
-       <label for="create_post">Created a post</label><br>
-       <input type="checkbox" id="comment_post" name="vehicle2" value="Car">
-       <label for="comment_post">Commented on a post</label><br>
-       <input type="checkbox" id="upvote" name="vehicle3" value="Boat">
-       <label for="upvote">Upvoted content</label><br>
-       <input type="checkbox" id="downvote" name="vehicle3" value="Boat">
-       <label for="upvote">Downvoted content</label><br>
-       <input type="checkbox" id="None" name="vehicle3" value="Boat">
-       <label for="None">None</label><br>
-       <input type="checkbox" id="never_used" name="vehicle3" value="Boat">
-       <label for="never_used">I've never used Reddit</label><br><br>
-
-       <label for="comments">Comments:</label> <br>
-       <textarea id="comments" name="comments" rows="4" cols="50">
-       Write your comments here...
-       </textarea>
-       <br><br>
-
-       <input type="submit" value="Submit">
-
-      </div>
+        <div class="q1_b">
+            <h3>What is your favourite varsity sport?</h3>
+            <input type="text" id="fav_varsity_sport" name="fav_varsity_sport">
 
         </div>
 
-    </body> 
-</html>
+        <div class="q2">
+            <h3>What is your most current degree?</h3>
+            <div class="q2_dropdown">
+                <select class="dropdown_btn" title="Select Degree">
+                    <option value="bachelors" selected="selected">Bachelors Degree</option>
+                    <option value="masters">Masters Degree</option>
+                    <option value="phd">Post Doctoral Degree</option>
+                </select>
+            </div>
 
+        </div>
 
+        <div class="q3">
+            <h3>How often do you use Reddit?</h3>
+            <div class="radios">
+                <input type="radio" id="very_often" name="q3" value="very_often">
+                <label for="very_often">Very Often</label><br>
+
+                <input type="radio" id="often" name="q3" value="often">
+                <label for="often">Often</label><br>
+
+                <input type="radio" id="sometimes" name="q3" value="sometimes">
+                <label for="sometimes">Sometimes</label><br>
+
+                <input type="radio" id="rarely" name="q3" value="rarely">
+                <label for="rarely">Rarely</label><br>
+
+                <input type="radio" id="never" name="q3" value="never">
+                <label for="never">Never</label><br>
+
+            </div>    
+        </div> 
+
+        <div class="q4">
+            <h3>Which of the following actions have you taken on Reddit? (Select all that apply)</h3>
+
+            <div>
+                <input type="checkbox" id="created_post" name="created_post" value="created_post">
+                <label for="created_post">Created a post</label><br>
+
+                <input type="checkbox" id="comment_post" name="comment_post" value="comment_post">
+                <label for="comment_post">Commented on a post</label><br>
+
+                <input type="checkbox" id="upvoted" name="upvoted" value="upvoted">
+                <label for="upvoted">Upvoted content</label><br>
+
+                <input type="checkbox" id="downvoted" name="downvoted" value="downvoted">
+                <label for="downvoted">Downvoted content</label><br>
+
+                <input type="checkbox" id="never_reddit" name="never_reddit" value="never_reddit">
+                <label for="never_reddit">I've never used Reddit</label>
+            </div>
+        </div>
+
+        <div class="q5">
+            <div class="comment_section">
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+
+        <div class="submit_btn"><input type="submit" value="Submit"></div>
         
+    </div>
+
+    <div class="picture"><img src="geegees_oldreddit.png" alt="geegees subreddit page"></div>
+    
+</body>
+</html>
