@@ -5,16 +5,23 @@
       <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
       <link href="./css/main.css" rel="stylesheet" />
       <title>Document</title>
-      <link href="style/style.css" rel="stylesheet" type="text/css">
+
+      <link href="style/clients_style.css" rel="stylesheet" type="text/css">
+      <link href="style/products_style.css" rel="stylesheet" type="text/css">
+      <script src="scripts/groceries.js"></script>
+      <script src="scripts/main.js"></script>
    </head>
-   <body>      
+   <body>
+
+      <!--Header-->
       <div class="tab">SHOP
          <button class="tablinks" style="float: right;" onclick="openInfo(event, 'Client')">Client</button>
          <button class="tablinks" style="float: right;" onclick="openInfo(event, 'Products')">Products</button>
          <button class="tablinks" style="float: right;" onclick="openInfo(event, 'Cart')">Cart</button>
       </div>
-      
-      <div id="Client" class="client">
+
+      <!--Client tab-->
+      <div id="Client" class="tabcontent">
          <div class="name"></div>
          <div class="pic_background"></div>
          <div class="profile_pic"></div>
@@ -50,8 +57,14 @@
             <button class="shop_btn">SHOP NOW</button>
          </div>
       </div>
+
+      <!--Products tab-->
+      <div id="Products" class="tabcontent">
       </div>
-      <script src="scripts/groceries.js"></script>
-      <script src="scripts/main.js"></script>
+
+      <!--Cart tab-->
+      <div id="Cart" class="tabcontent">
+      </div>
+
    </body>
 </html>
