@@ -27,43 +27,18 @@
       <!-- Tab content -->
 
       <div>
-         <div id="Client" class="tabcontent">
-            <div class="pic_background"></div>
-            <div class="profile_pic"></div>
-            <span class="title">Shop YOUR way!</span>
-            <span class="gluten">Gluten Free</span>
-            <span class="dairy">Dairy Free</span>
-            <span class="veg">Vegetarian</span>
-            <span class="organic">Organic Only</span>
-            <span class="none">No dietary restrictions</span>
-           
-            <div class="options" >
-               <label class="glutenfree">
-               <input type="checkbox" id="dietSelect" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
-               <span class="checkmark"></span>
-               </label>
-               <label class="dairyfree">
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               </label>
-               <label class="vegonly">
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               </label>
-               <label class="orgonly">
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               </label>
-               <label class="norestric">
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               </label>
-
-            </div>
-            
-            <div class="submit">
-               <button class="shop_btn">SHOP NOW</button>
-            </div>
+         <h2 style="color:green">Client Information</h2>  
+         <h4> Tell us a bit about you. </h4>  
+         Choose a Category:
+         <tr>  
+         <td> Vegetarian: <input type="checkbox" id="check1" class="pl" value="vegetarian"> </td>  
+         <td> Gluten Free: <input type="checkbox" id="check2" class="pl" value="glutenFree"> </td>   
+         </tr> <tr>  
+         <td> Organic: <input type="checkbox" id="check3" class="pl" value="organic"> </td>  
+         <td> None: <input type="checkbox" id="check4" class="pl" value="none"> </td>  
+         </tr> <tr>  
+  
+         <button onclick="populateListProductChoices(this.id, 'displayProduct')">Submit</button> <br>  
          </div>
      
       

@@ -94,14 +94,26 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+	
+	//for (let i=0; i<prods.length; i+=1) {
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		if ((restriction[0] == "Vegetarian") && {
+			for (let j=0; j<prods.length; j+=1) {
+				if (prods[j].vegetarian == true) { 
+					product_names.push({name: prods[j].name, price: prods[j].price})
+				}
+
+
+			product_names.push({name: prods[i].name, price: prods[i].price});
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)) {
+				product_names.push({name: prods[i].name, price: prods[i].price});
+				
+			}
+		}
+		else if ((restriction[0] == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push({name: prods[i].name, price: prods[i].price});
-		}
-		else if (restriction == "None"){
+		else if (restriction[0] == "None"){
 			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
 	}
