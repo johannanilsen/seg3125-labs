@@ -29,12 +29,14 @@ function openInfo(evt, tabName) {
 
 function populateListProductChoices(slct1, slct2) {
     var s2 = document.getElementById(slct2);
-	var l1 = document.getElementById("check1");  
-	var l2 = document.getElementById("check2");  
-	var l3 = document.getElementById("check3");  
-	var l4 = document.getElementById("check4");  
+	var l1 =document.querySelector('.vegetarian_checkbox').checked;
+	var l2 = document.querySelector('.glutenfree_checkbox').checked;
+	var l3 = document.querySelector('.organic_checkbox').checked;
+	var l4 = document.querySelector('.none_checkbox').checked;
+ 
 
-	res = [l1.value, l2.value, l3.value, l4.value]
+	res = [l1, l2, l3, l4]
+	console.log(res)
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";

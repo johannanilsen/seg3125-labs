@@ -93,32 +93,20 @@ var products = [
 // prices should be included in this list, as well as a sort based on price
 
 function restrictListProducts(prods, restriction) {
-	let product_names = [];
-	
-	//for (let i=0; i<prods.length; i+=1) {
+	let product_names = [];	
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction[0] == "Vegetarian") && {
-			for (let j=0; j<prods.length; j+=1) {
-				if (prods[j].vegetarian == true) { 
-					product_names.push({name: prods[j].name, price: prods[j].price})
-				}
-
-
-			product_names.push({name: prods[i].name, price: prods[i].price});
-			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)) {
-				product_names.push({name: prods[i].name, price: prods[i].price});
-				
-			}
-		}
-		else if ((restriction[0] == "GlutenFree") && (prods[i].glutenFree == true)){
+		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
-		else if (restriction[0] == "None"){
+		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_names.push({name: prods[i].name, price: prods[i].price});
+ 		}
+		 else if (restriction == "None"){
 			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
 	}
-	return product_names;
-}
+
+
 
 
 // Calculate the total price of items, with received parameter being a list of products

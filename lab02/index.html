@@ -26,16 +26,16 @@
 
       <!-- Tab content -->
 
-      <div>
-         <h2 style="color:green">Client Information</h2>  
+      <div id="Client" class="tabcontent">
+         <h2  >Client Information</h2>  
          <h4> Tell us a bit about you. </h4>  
          Choose a Category:
          <tr>  
-         <td> Vegetarian: <input type="checkbox" id="check1" class="pl" value="vegetarian"> </td>  
-         <td> Gluten Free: <input type="checkbox" id="check2" class="pl" value="glutenFree"> </td>   
+         <td> Vegetarian: <input class="vegetarian_checkbox" type="checkbox" id="check1" class="pl" value="vegetarian"> </td>  
+         <td> Gluten Free: <input class="glutenfree_checkbox" type="checkbox" id="check2" class="pl" value="glutenFree"> </td>   
          </tr> <tr>  
-         <td> Organic: <input type="checkbox" id="check3" class="pl" value="organic"> </td>  
-         <td> None: <input type="checkbox" id="check4" class="pl" value="none"> </td>  
+         <td> Organic: <input class="organic_checkbox" type="checkbox" id="check3" class="pl" value="organic"> </td>  
+         <td> None: <input  class="none_checkbox" type="checkbox" id="check4" class="pl" value="none"> </td>  
          </tr> <tr>  
   
          <button onclick="populateListProductChoices(this.id, 'displayProduct')">Submit</button> <br>  
