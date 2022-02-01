@@ -35,16 +35,19 @@ function populateListProductChoices(slct1, slct2) {
     s2.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    var optionArray  = restrictListProducts(products, s1.value);
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
-	console.log(s1)
-	console.log(s2)
+	
+	console.log(optionArray)
+	var sortedArray = optionArray.sort((a, b) => (a.price > b.price) ? 1 : -1)
+
 
 
 	for (i = 0; i < optionArray.length; i++) {
-		var productName = optionArray[i];
+		var productName = sortedArray[i].name;
+		var productPrice = sortedArray[i].price;
 
 		var div_product = document.createElement("div");
 		var div_image = document.createElement("div");
@@ -77,7 +80,17 @@ function populateListProductChoices(slct1, slct2) {
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
+		var div_div_name = document.createTextNode(productName)
+		var div_div_dot = document.createTextNode("-")
+		var div_div_price = document.createTextNode(productPrice)
+		var div_div_currrency = document.createTextNode("CAD")
+
+		label.appendChild(div_div_name);
+		label.appendChild(div_div_dot);
+		label.appendChild(div_div_price);
+		label.appendChild(div_div_currrency);
+
+
 		div_price.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
@@ -118,3 +131,4 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
 }
+

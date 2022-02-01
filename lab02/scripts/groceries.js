@@ -6,61 +6,83 @@ var products = [
 		name: "brocoli",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 10, 
+		image: "fruit.png"
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
-		price: 1.99
+		organic: true,
+		price: 20,
+		image: "fruit.png"
 	},
 	{
 		name: "meat",
 		vegetarian: false,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 30,
+		image: "fruit.png"
 	},
 	{
 		name: "seafood",
 		vegetarian: false,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 1,
+		image: "fruit.png"
 	},
 	{
 		name: "cereals",
 		vegetarian: true,
 		glutenFree: false,
-		price: 1.99
+		organic: true,
+		price: 5,
+		image: "fruit.png"
 	},
 	{
 		name: "eggs",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 9,
+		image: "fruit.png"
 	},
 	{
 		name: "cheese",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 2,
+		image: "fruit.png"
 	},
 	{
 		name: "oil",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 14,
+		image: "fruit.png"
 	},
 	{
 		name: "rice",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 17,
+		image: "fruit.png"
+
 	},
 	{
 		name: "onion",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		organic: true,
+		price: 19,
+		image: "fruit.png"
+
 	},
 	
 ];
@@ -74,17 +96,18 @@ function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
+			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
 		else if (restriction == "None"){
-			product_names.push(prods[i].name);
+			product_names.push({name: prods[i].name, price: prods[i].price});
 		}
 	}
 	return product_names;
 }
+
 
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
@@ -96,3 +119,6 @@ function getTotalPrice(chosenProducts) {
 	}
 	return totalPrice;
 }
+
+
+	 
