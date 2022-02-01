@@ -12,14 +12,57 @@ var products = [
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
-		price: 2.35
+		price: 1.99
 	},
 	{
-		name: "salmon",
+		name: "meat",
 		vegetarian: false,
 		glutenFree: true,
-		price: 10.00
-	}
+		price: 1.99
+	},
+	{
+		name: "seafood",
+		vegetarian: false,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "cereals",
+		vegetarian: true,
+		glutenFree: false,
+		price: 1.99
+	},
+	{
+		name: "eggs",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "cheese",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "oil",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "rice",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	{
+		name: "onion",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99
+	},
+	
 ];
 	
 
