@@ -14,7 +14,13 @@ body {
   font-family: Roboto;
   font-weight: Bold;
   font-size: 100px;
-  background-color: #BDBDBD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#shop-logo{
+  height: 100px;
+  padding-left: 2 0px;
 }
 
 .tablinks {
