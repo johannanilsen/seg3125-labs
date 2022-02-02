@@ -48,6 +48,7 @@
     border-radius: 10px;
     padding: 10px;
     background-color: #c094fc;
+    display: flex;
 }
 
 .product{
@@ -67,6 +68,20 @@
 
 
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #c094fc;
+    color: black;
+    text-align: center;
+    font-family: LemonMilk;
+
+
+  }
+
 .product-image img{
     margin-top: 40px;
 }
