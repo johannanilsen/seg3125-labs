@@ -49,20 +49,18 @@
          </div>
          <div>
             <div id="displayProduct"></div>
-            <button id="addCart" type="button" class="block" onclick="selectedItems()">
+            <button id="addCart" class="add_button"type="button" class="block" onclick="selectedItems()">
                Add selected items to cart.
             </button>
          </div>
       </div>
+      <!--Cart tab-->
+     
       <div id="Cart" class="tabcontent">
-         <div class="cart_div"></div>
-         <div class="name"></div>
-         <span class="cart_label">Your shopping cart:</span><span class="food_label">Food</span><span class="price_label">Price</span>       
-         <div class="total_div"></div>
-         <span class="food_total">Food:</span><span class="tax_label">Tax:</span><span class="total_label">  Total: </span>
-         <div class="checkout">
-             <button class="checkout_btn">CHECKOUT</div>
-         </div>
+         <h3>Cart</h3>
+         <p>Here is your cart.</p>
+         <div id="displayCart"></div>
+      </div>
    </div>
    
       <script src="scripts/groceries.js"></script>
