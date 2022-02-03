@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+      <head>
+         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+         <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+         <link href="./css/main.css" rel="stylesheet" />
+         <title>Document</title>
+         <link href="style/header_style.css" rel="stylesheet" type="text/css">
+         <link href="style/products_style.css" rel="stylesheet" type="text/css">
+         <link href="style/clients_style.css" rel="stylesheet" type="text/css">
+         <link href="style/cart_style.css" rel="stylesheet" type="text/css">
+         <script src="scripts/groceries.js"></script>
+         <script src="scripts/main.js"></script>
+      </head>
+   <body>
+
+
+      <!-- Tab links, each one with an onclick event associated with it -->
+      <div class="header-container">
+         <img id="shop-logo" src="images/shop-logo.png" alt="logo" onclick="openInfo(event, 'Products')">  
+         <div>
+            <img class="header-icon" src="images/profile.png" alt="logo"  onclick="openInfo(event, 'Client')">    
+            <img class="header-icon" src="images/checkout.png" alt="logo" onclick="openInfo(event, 'Cart')">    
+            <figcaption>ADD RESTRICTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECKOUT</figcaption>
+         </div>
+      </div>
+
+      <!-- Tab content -->
+
+      <div id="Client" class="tabcontent">
+         <h2  >Client Information</h2>  
+         <h4> Tell us a bit about you. </h4>  
+         Choose a Category:
+         <tr>  
+         <td> Vegetarian: <input class="vegetarian_checkbox" type="checkbox" id="check1" class="pl" value="vegetarian"> </td>  
+         <td> Gluten Free: <input class="glutenfree_checkbox" type="checkbox" id="check2" class="pl" value="glutenFree"> </td>   
+         </tr> <tr>  
+         <td> Organic: <input class="organic_checkbox" type="checkbox" id="check3" class="pl" value="organic"> </td>  
+         <td> None: <input  class="none_checkbox" type="checkbox" id="check4" class="pl" value="none"> </td>  
+         </tr> <tr>  
+  
+         <button onclick="populateListProductChoices(this.id, 'displayProduct')">Submit</button> <br>  
+         </div>
+     
+      
+      <div id="Products" class="tabcontent">
+         <div class="product-info">
+            <div id ="product-info_text">Order your groceries <br>online!</div>
+            <img  id="product-info_image" src="images/fruit.png" alt="fruit">  
+         </div>
+         <div>
+            <div id="displayProduct"></div>
+            <button id="addCart" class="add_button"type="button" class="block" onclick="selectedItems()">
+               Add selected items to cart.
+            </button>
+         </div>
+      </div>
+      <!--Cart tab-->
+     
+      <div id="Cart" class="tabcontent">
+         <h3>Cart</h3>
+         <p>Here is your cart.</p>
+         <div id="displayCart"></div>
+      </div>
+   </div>
+
+   <footer class=footer>
+      <p>Website designed by Group 20: Shiza Siddiqui, Tylo Borsboom, Johanna Nilsen, Christopher Mika Aris</p>
+    </footer>
+   
+   
+      <script src="scripts/groceries.js"></script>
+      <script src="scripts/main.js"></script>
+
+   </body>
+</html>
