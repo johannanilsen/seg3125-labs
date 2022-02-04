@@ -21,6 +21,9 @@
     border-radius: 25px;
     padding: 5px;
 }
+.shop-logo:hover {
+    background-color: #5c3a8b;
+ }
 
 .header-icons{
     margin-top: 20;
