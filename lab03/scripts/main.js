@@ -56,6 +56,7 @@ function populateListProductChoices(slct1, slct2) {
         var productName = sortedArray[i].name;
         var productPrice = sortedArray[i].price;
         var productCategory = sortedArray[i].category
+        var productImage = sortedArray[i].image
  
         var div_product = document.createElement("div");
         var div_category = document.createElement("div");
@@ -70,7 +71,7 @@ function populateListProductChoices(slct1, slct2) {
  
         // create the checkbox and add in HTML DOM
         var image = document.createElement("IMG");
-        image.setAttribute("src", "images/fruit.png")
+        image.setAttribute("src", productImage)
         image.setAttribute("width", "100");
         image.setAttribute("height", "100");
  
