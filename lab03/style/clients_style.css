@@ -42,6 +42,17 @@ div#Client.tabcontent {
   font-family: 'LouisGeorge';
 }
 
+div#Client.tabcontent button {
+  border: none;
+  font-size: 20px;
+  font-family: 'LemonMilk';
+  border-radius: 2px;
+}
+
+div#Client.tabcontent button:hover {
+  cursor: pointer;
+}
+
 div#Cart.tabcontent {
   background-color: #500c50a3;
   border-radius: 25px;
