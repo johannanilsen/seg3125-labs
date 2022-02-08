@@ -147,6 +147,15 @@ function restrictListProducts(prods, restriction) {
                     image: product.image
                 });
         }
+        else if (organic) {
+            if (product.organic)
+                product_names.push({
+                    name: product.name,
+                    price: product.price,
+                    category: product.category, 
+                    image: product.image
+                });
+        }
     }
     return product_names
 }
