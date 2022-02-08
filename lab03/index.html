@@ -17,11 +17,12 @@
 
       <!-- Tab links, each one with an onclick event associated with it -->
       <div class="header-container">
-         <img class = "shop-logo" id="shop-logo" src="images/shop-logo.png" alt="logo" onclick="openInfo(event, 'Products')">  
-         <div>
-            <img class="header-icon" src="images/profile.png" alt="logo"  onclick="openInfo(event, 'Client')">    
-            <img class="header-icon" src="images/checkout.png" alt="logo" onclick="openInfo(event, 'Cart')">    
-            <figcaption>ADD RESTRICTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECKOUT</figcaption>
+         <div style="padding-top: 26px;"><img class = "shop-logo" id="shop-logo" src="images/shop-logo.png" alt="logo" onclick="openInfo(event, 'Products')"></div>
+         <div style="display: inherit;">
+            <figure><img class="header-icon" src="images/profile.png" alt="logo"  onclick="openInfo(event, 'Client')">
+            <figcaption style="text-align: center;">RESTRICTIONS</figcaption></figure>    
+            <figure><img class="header-icon" src="images/checkout.png" alt="logo" onclick="openInfo(event, 'Cart')">    
+            <figcaption style="text-align: center;">CHECKOUT</figcaption></figure>
          </div>
       </div>
 
@@ -31,13 +32,19 @@
          <h2  >Client Information</h2>  
          <h4> Tell us a bit about you. </h4>  
          Choose a Category:
-         <tr>  
-         <td> Vegetarian: <input class="vegetarian_checkbox" type="checkbox" id="check1" class="pl" value="vegetarian"> </td>  
-         <td> Gluten Free: <input class="glutenfree_checkbox" type="checkbox" id="check2" class="pl" value="glutenFree"> </td>   
-         </tr> <tr>  
-         <td> Organic: <input class="organic_checkbox" type="checkbox" id="check3" class="pl" value="organic"> </td>  
-         <td> None: <input  class="none_checkbox" type="checkbox" id="check4" class="pl" value="none"> </td>  
-         </tr> <tr>  
+         <div>
+              
+            <input class="vegetarian_checkbox" type="checkbox" id="check1" class="pl" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>   
+            <input class="glutenfree_checkbox" type="checkbox" id="check2" class="pl" value="glutenFree">
+            <label for="glutenFree">Gluten Free</label><br>      
+            <input class="organic_checkbox" type="checkbox" id="check3" class="pl" value="organic">
+            <label for="organic">Organic</label><br>  
+            <input  class="none_checkbox" type="checkbox" id="check4" class="pl" value="none">
+            <label for="none">None</label> 
+                 
+         </div>
+         
   
          <button onclick="populateListProductChoices(this.id, 'displayProduct')">Submit</button> <br>  
          </div>

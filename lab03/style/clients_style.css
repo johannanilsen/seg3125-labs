@@ -30,8 +30,23 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-top: none;
+  height: 800px;
+}
+
+div#Client.tabcontent {
+  background-color:#f3ac26a8;
+  border-radius: 25px;
+  font-size: 2em;
+  font-family: 'LouisGeorge';
+}
+
+div#Cart.tabcontent {
+  background-color: #500c50a3;
+  border-radius: 25px;
+  font-size: 2em;
+  font-family: 'LouisGeorge';
 }
 
 /*Clients style*/

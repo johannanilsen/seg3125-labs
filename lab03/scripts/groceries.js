@@ -49,7 +49,7 @@ var products = [
     },
     {
         name: "eggs",
-        category: "meat",
+        category: "dairy",
         vegetarian: true,
         glutenFree: true,
         organic: true,

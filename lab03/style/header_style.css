@@ -25,6 +25,10 @@
     background-color: #5c3a8b;
  }
 
+ .shop-logo:active {
+    background-color: #5c3a8b;
+ }
+
 .header-icons{
     margin-top: 20;
     margin-left: 30px;
