@@ -3,7 +3,7 @@
  
 var products = [
     {
-        name: "brocoli",
+        name: "broccoli",
         category: "vegetable",
         vegetarian: true,
         glutenFree: true,
@@ -66,8 +66,8 @@ var products = [
         image: "images/cheese.png"
     },
     {
-        name: "baked",
-        category: "cookies",
+        name: "cookies",
+        category: "baked",
         vegetarian: true,
         glutenFree: true,
         organic: true,
@@ -75,7 +75,7 @@ var products = [
         image: "images/cookies.png"
     },
     {
-        name: "alcohol",
+        name: "Red Wine",
         category: "wine",
         vegetarian: true,
         glutenFree: true,

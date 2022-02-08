@@ -92,7 +92,7 @@ function populateListProductChoices(slct1, slct2) {
         var label = document.createElement('label')
         label.htmlFor = productName;
         var div_div_name = document.createTextNode(productName)
-        var div_div_dot = document.createTextNode(" - ")
+        var div_div_dot = document.createTextNode(" - $")
         var div_div_price = document.createTextNode(productPrice)
         var div_div_currrency = document.createTextNode("CAD")
  
@@ -148,7 +148,7 @@ function selectedItems(){
        
     // add paragraph and total price
     c.appendChild(para);
-    c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+    c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
        
 }
  
