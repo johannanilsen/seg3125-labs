@@ -13,7 +13,7 @@ var products = [
     },
     {
         name: "bread",
-        category: "baked",
+        category: "bakery",
         vegetarian: true,
         glutenFree: false,
         organic: true,
@@ -40,7 +40,7 @@ var products = [
     },
     {
         name: "cake",
-        category: "baked",
+        category: "bakery",
         vegetarian: true,
         glutenFree: false,
         organic: true,
@@ -67,7 +67,7 @@ var products = [
     },
     {
         name: "cookies",
-        category: "baked",
+        category: "bakery",
         vegetarian: true,
         glutenFree: true,
         organic: true,
@@ -75,7 +75,7 @@ var products = [
         image: "images/cookies.png"
     },
     {
-        name: "Red Wine",
+        name: "red wine",
         category: "wine",
         vegetarian: true,
         glutenFree: true,
@@ -84,7 +84,7 @@ var products = [
         image: "images/glass.png"
     },
     {
-        name: "Flour",
+        name: "flour",
         category: "grain",
         vegetarian: true,
         glutenFree: true,
