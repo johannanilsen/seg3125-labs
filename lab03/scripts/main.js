@@ -141,6 +141,12 @@ function selectedItems(){
     for (i = 0; i < ele.length; i++) {
         if (ele[i].checked) {
             para.appendChild(document.createTextNode(ele[i].value));
+            for(j=0;j<products.length;j++){
+                if (products[j].name == ele[i].value){
+                    var price = products[j].price;
+                    para.appendChild(document.createTextNode(" ~ "+price));
+                }
+            }
             para.appendChild(document.createElement("br"));
             chosenProducts.push(ele[i].value);
         }
