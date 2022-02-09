@@ -40,7 +40,6 @@
 
 }
 .add_button{
-    display: flex;
     justify-content: center;
     margin-top: 7px;
     font-family: LemonMilk;
@@ -49,6 +48,9 @@
     padding: 10px;
     background-color: #c094fc;
     display: flex;
+    margin-left: 20px;
+    box-shadow: 0px 0px;
+
 }
 
 .product{

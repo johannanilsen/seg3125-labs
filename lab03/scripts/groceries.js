@@ -3,49 +3,49 @@
  
 var products = [
     {
-        name: "brocoli",
+        name: "broccoli",
         category: "vegetable",
         vegetarian: true,
         glutenFree: true,
         organic: false,
         price: 10,
-        image: "fruit.png"
+        image: "images/broccoli.png"
     },
     {
         name: "bread",
-        category: "grain",
+        category: "bakery",
         vegetarian: true,
         glutenFree: false,
         organic: true,
         price: 20,
-        image: "fruit.png"
+        image: "images/bread.png"
     },
     {
-        name: "chicken",
+        name: "bacon",
         category: "meat",
         vegetarian: false,
         glutenFree: true,
         organic: true,
         price: 30,
-        image: "fruit.png",
+        image: "images/bacon.png"
     },
     {
-        name: "seafood",
+        name: "salmon",
         category: "meat",
         vegetarian: false,
         glutenFree: true,
         organic: true,
         price: 1,
-        image: "fruit.png"
+        image: "images/salmon.png"
     },
     {
-        name: "cereals",
-        category: "grain",
+        name: "cake",
+        category: "bakery",
         vegetarian: true,
         glutenFree: false,
         organic: true,
         price: 5,
-        image: "fruit.png"
+        image: "images/cake.png"
     },
     {
         name: "eggs",
@@ -54,7 +54,7 @@ var products = [
         glutenFree: true,
         organic: true,
         price: 9,
-        image: "fruit.png"
+        image: "images/eggs.png"
     },
     {
         name: "cheese",
@@ -63,37 +63,37 @@ var products = [
         glutenFree: true,
         organic: true,
         price: 2,
-        image: "fruit.png"
+        image: "images/cheese.png"
     },
     {
-        name: "olive oil",
-        category: "oil",
+        name: "cookies",
+        category: "bakery",
         vegetarian: true,
         glutenFree: true,
         organic: true,
         price: 14,
-        image: "fruit.png"
+        image: "images/cookies.png"
     },
     {
-        name: "rice",
+        name: "red wine",
+        category: "wine",
+        vegetarian: true,
+        glutenFree: true,
+        organic: true,
+        price: 14,
+        image: "images/glass.png"
+    },
+    {
+        name: "flour",
         category: "grain",
         vegetarian: true,
         glutenFree: true,
         organic: true,
         price: 17,
-        image: "fruit.png"
+        image: "images/flour.png"
  
     },
-    {
-        name: "onion",
-        category: "vegetable",
-        vegetarian: true,
-        glutenFree: true,
-        organic: true,
-        price: 19,
-        image: "fruit.png"
- 
-    },
+   
    
 ];
    
@@ -116,7 +116,8 @@ function restrictListProducts(prods, restriction) {
             product_names.push({
                 name: product.name,
                 price: product.price,
-                category: product.category
+                category: product.category, 
+                image: product.image
             });
         }
         else if (vegitarian && glutenFree) {
@@ -124,7 +125,8 @@ function restrictListProducts(prods, restriction) {
                 product_names.push({
                     name: product.name,
                     price: product.price,
-                    category: product.category
+                    category: product.category, 
+                    image: product.image
                 });
         }
  
@@ -133,14 +135,25 @@ function restrictListProducts(prods, restriction) {
                 product_names.push({
                     name: product.name,
                     price: product.price,
-                    category: product.category
+                    category: product.category, 
+                    image: product.image
                 });
         } else if (glutenFree) {
             if (((organic && product.organic) || !organic) && product.glutenFree)
                 product_names.push({
                     name: product.name,
                     price: product.price,
-                    category: product.category
+                    category: product.category, 
+                    image: product.image
+                });
+        }
+        else if (organic) {
+            if (product.organic)
+                product_names.push({
+                    name: product.name,
+                    price: product.price,
+                    category: product.category, 
+                    image: product.image
                 });
         }
     }
