@@ -28,7 +28,33 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border-top: none;
+  f/chris
+  border: 1px solid #fff
+}
+
+div#Client.tabcontent {
+  background-color:#f3ac26a8;
+  border-radius: 25px;
+  font-size: 2em;
+  font-family: 'LouisGeorge';
+}
+
+div#Client.tabcontent button {
+  border: none;
+  font-size: 20px;
+  font-family: 'LemonMilk';
+  border-radius: 2px;
+}
+
+div#Client.tabcontent button:hover {
+  cursor: pointer;
+}
+
+div#Cart.tabcontent {
+  background-color: #500c50a3;
+  border-radius: 25px;
+  font-size: 2em;
+  font-family: 'LouisGeorge';
 }
 
 /*Clients style*/
