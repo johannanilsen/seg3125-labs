@@ -5,43 +5,59 @@
 
 /* Bootstrap default font-family is Helvetica Neue */
 @font-face { 
-    font-family: LemonMilk;
-    src: url("LEMONMILK-Regular.otf") format("opentype");
+  font-family: LemonMilk;
+  src: url("LEMONMILK-Regular.otf") format("opentype");
 }
 
 *{ 
-  font-family: "LemonMilk";
+font-family: "LemonMilk";
 }
 
 .navbar-expand-lg   {
-  background-color: rgb(255, 236, 129);
+background-color: rgb(255, 236, 129);
 }
 
 .h1 { 
-  padding-left: 5px;
+padding-left: 5px;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .row > div[class*='col-'] {
- display: flex;
+display: flex;
 }
 
 
 .card-title { 
-  text-align: center;
-  padding: 10px;
+text-align: center;
+padding: 10px;
 }
 
 .card-text { 
-  padding: 10px;
+padding: 10px;
 }
 
 .container-md { 
-  background-color: black;
-  color:rgb(255, 236, 129)
+background-color: black;
+color:rgb(255, 236, 129)
+}
+
+.card-header { 
+  background-color:rgb(255, 249, 218)
+}
+
+.booking-card { 
+  background-color: white;
+}
+
+.card-link { 
+  color: black; 
+}
+
+.card-link:hover { 
+  color: rgb(139, 139, 139); 
 }
 
