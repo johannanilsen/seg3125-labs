@@ -46,7 +46,7 @@
             <div class="navbar-text text-black-50">
                 <p class="m-0">555 Burgundy Road</p>
                 <p class="m-0">Ottawa, ON K7T 8H3</p>
-                <a class="text-black-50" href="tel:6131234567">(613) 123-4567</a>
+                <a class="text-black-50">(613) 123-4567</a>
             </div>
         </div>
     </nav>
@@ -55,10 +55,10 @@
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
     <div class="container">
-        <br>
+        <p>For all your bike repair, assembly and safety needs</p>
         <br>
         <h2>Services offered</h2>
-        <p>Here is a list of services offered</p>            
+        <p>What we do</p>            
         <table class="table table-primary table-hover">
             <thead>
             <tr>
@@ -156,18 +156,18 @@
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
-        <div class="container-md p-3 my-3 border">
-            <h1>Book a service now</h1>
+        <div class="container-md p-3 my-3 border" style="display:inline-block;">
+            <h1>Book a service</h1>
         </div>
         <div class = "booking" id="accordion">
             <div class="booking-card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Book a service</a>
                 </div>
                 <!--From https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select-->
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Choose a service</p>
+                        <p>What do you need?</p>
                         <select class = "dropdown-services" name="choice">
                             <option value="first">tune up - $29.99</option>
                             <option value="second">overhaul - $74.99</option>
@@ -179,11 +179,11 @@
 
             <div class="booking-card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseDate">Pick a date</a>
                 </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>What date?</p>
+                        <p>When do you need it?</p>
                         <!-- Bootstrap has various input components. Some examples are given here: -->
                         <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                         <div class="form-group row">
@@ -198,11 +198,11 @@
 
             <div class="booking-card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Add your info</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Your information so we can contact you</p>
+                        <p>How can we reach you?</p>
                         <p>Form to enter name, email, phone</p>
                     </div>
                 </div>

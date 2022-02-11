@@ -17,8 +17,9 @@ font-family: "LemonMilk";
 background-color: rgb(255, 236, 129);
 }
 
-.h1 { 
-padding-left: 5px;
+.small {
+  font-size: 10px;
+  position: absolute;
 }
 
 .row {
