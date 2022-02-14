@@ -142,3 +142,18 @@ color:rgb(255, 236, 129)
   font-size: 18px;
   margin: 0 2px;
 }
+
+/* Form element CSS */
+
+label{
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 6px;
+  text-align: right;
+  width: 150px;
+  vertical-align: top;
+}
+
+input#submit-btn {
+  margin-left: 550px;
+}

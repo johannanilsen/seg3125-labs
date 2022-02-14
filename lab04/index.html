@@ -203,12 +203,31 @@
 
             <div class="booking-card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Add your info</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Contact Information</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <p>How can we reach you?</p>
-                        <p>Form to enter name, email, phone</p>
+                        <form>
+                            <fieldset>
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"><br>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br>
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone"><br>
+                            
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" cols="40" rows="5"></textarea><br><br>
+
+                            <input type="submit" id="submit-btn" value="BOOK!">
+
+                            </fieldset>
+                                 
+                        </form>
                     </div>
                 </div>
             </div>
