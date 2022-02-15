@@ -54,33 +54,85 @@
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
+    <!-- Decriptions of bike services from https://www.cyclingutah.com/tech/mechanics-corner/is-your-bike-ready-for-an-overhaul/ -->
     <div class="container">
         <p>For all your bike repair, assembly and safety needs</p>
         <br>
         <h2>Services offered</h2>
-        <p>What we do</p>            
-        <table class="table table-primary table-hover">
-            <thead>
-            <tr>
-                <th>Tune ups</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Overhauls</td>
-                <td>Description</td>
-            </tr>
-            <tr>
-                <td>Cleaning</td>
-                <td>Description</td>
-            </tr>
-            <tr>
-                <td>Electronics and Tubing</td>
-                <td>Description</td>
-            </tr>
-            </tbody>
-        </table>
+        <p>What we do</p>
+        <div class = "services">          
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button1">Tune Ups - $29.99</button>
+        <div id="button1" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/bikeTuneUp.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ul>
+            <li>Cleaning any dirt, oil and old grease off the bicycle</li>
+            <li>Gears and derailleurs are checked for damage and alignment</li>
+            <li>The drivechain is checked for stretching or kinking
+            Brakes are inspected for wear and grip</li>
+            <li>The tires are checked for wear, cracks or swellings</li>
+            <li>All and any tension adjustments needed are made to the various cables</li> 
+            <li>The wheel and frame alignments are checked</li>
+            <li>The wheel spokes (if any) are checked and tightened if needed</li>
+            <li>Every nut and bolt must be tightened to ensure that the bike is stable while riding</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button2">Overhauls - $74.99</button>
+        <div id="button2" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/overhaul.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          An overhaul is a comprehensive service during which the complete bike is disassembled, bearings cleaned or replaced, drivetrain cleaned and cables and housing replaced. After reassembly, every system is tuned to perfection. Depending on how often the bike is used and under what conditions, an overhaul could be required once a year, every other year, or every 3000 miles.
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button3">Cleaning - $34.99</button>
+        <div id="button3" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/cleaning.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ol>
+            <li> Clean the drivetrain</li>
+            <li> Wipe the discs or braking surface down</li>
+            <li> Rinse and apply detergent</li>
+            <li> Rinse</li>
+            <li> Dry</li> 
+            <li> Lubricate</li>
+          </ol>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button4">Electronics and Tubing - $84.99</button>
+        <div id="button4" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/tubing1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="service-img">
+                <img src="images/tubing2.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ol>
+            <li> Remove wheel from bike</li>
+            <li> Remove the tire</li>
+            <li> Replace the tube</li>
+            <li> Insert the new tube</li>
+            <li> Reset the tire</li> 
+            <li> Inflate the tube</li>
+          </ol>
+        </div>
+        <br>
+        <br>
+        </div>
     </div>
 
 

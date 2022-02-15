@@ -65,7 +65,7 @@ color:rgb(255, 236, 129)
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
 .team4 {
   font-family: "Montserrat", sans-serif;
-	color: #8d97ad;
+	color: rgb(255, 236, 129);
   font-weight: 300;
 }
 
@@ -156,4 +156,13 @@ label{
 
 input#submit-btn {
   margin-left: 550px;
+}
+#services .button1 {
+  border: none;
+  color:  rgb(255, 236, 129);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
