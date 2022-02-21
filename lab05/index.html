@@ -1,0 +1,325 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Lab 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!-- js scripts -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/service.js"></script>
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <nav class="navbar navbar-expand-lg  text-black">
+        <div class="container-lg">
+            <div class="d-inline-flex header">
+                <img src="images/lemon_logo.png" width="40" height="40" alt="lemon" class="me-6 align-self-center">
+                <h1 class="my-4">&nbsp;Lemon Bike Repair Shop</h1>
+            </div>
+            <!-- Button trigger modal
+            We use the same button code from above, but now we can trigger a modal to appear.
+            The bootstrap tutorial includes many different types of modals that you can explore
+            https://getbootstrap.com/docs/5.0/components/modal/
+            -->
+            <div class="navbar-text text-black-50">
+                <p class="m-0">555 Burgundy Road</p>
+                <p class="m-0">Ottawa, ON K7T 8H3</p>
+                <a class="text-black-50">(613) 123-4567</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <!-- Decriptions of bike services from https://www.cyclingutah.com/tech/mechanics-corner/is-your-bike-ready-for-an-overhaul/ -->
+    <div class="container">
+        <p>For all your bike repair, assembly and safety needs</p>
+        <br>
+        <h2>Services offered</h2>
+        <a href="#" data-placement="right" data-toggle="tooltip" title="Click buttons for in-depth descriptions!">What we do</a>
+        <br>
+        <br>
+        <div class = "services">          
+        <button title="Click for description of service" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button1">Tune Ups - $29.99</button>
+        <div id="button1" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/bikeTuneUp.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ul>
+            <li>Cleaning any dirt, oil and old grease off the bicycle</li>
+            <li>Gears and derailleurs are checked for damage and alignment</li>
+            <li>The drivechain is checked for stretching or kinking
+            Brakes are inspected for wear and grip</li>
+            <li>The tires are checked for wear, cracks or swellings</li>
+            <li>All and any tension adjustments needed are made to the various cables</li> 
+            <li>The wheel and frame alignments are checked</li>
+            <li>The wheel spokes (if any) are checked and tightened if needed</li>
+            <li>Every nut and bolt must be tightened to ensure that the bike is stable while riding</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <button title="Click for description of service" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button2">Overhauls - $74.99</button>
+        <div id="button2" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/overhaul.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          An overhaul is a comprehensive service during which the complete bike is disassembled, bearings cleaned or replaced, drivetrain cleaned and cables and housing replaced. After reassembly, every system is tuned to perfection. Depending on how often the bike is used and under what conditions, an overhaul could be required once a year, every other year, or every 3000 miles.
+        </div>
+        <br>
+        <br>
+        <button title="Click for description of service" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button3">Cleaning - $34.99</button>
+        <div id="button3" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/cleaning.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ol>
+            <li> Clean the drivetrain</li>
+            <li> Wipe the discs or braking surface down</li>
+            <li> Rinse and apply detergent</li>
+            <li> Rinse</li>
+            <li> Dry</li> 
+            <li> Lubricate</li>
+          </ol>
+        </div>
+        <br>
+        <br>
+        <button title="Click for description of service" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button4">Electronics and Tubing - $84.99</button>
+        <div id="button4" class="collapse">
+            <br>
+            <div class="service-img">
+                <img src="images/tubing1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="service-img">
+                <img src="images/tubing2.jpg" class="img-fluid" alt="">
+            </div>
+            <br>
+          <ol>
+            <li> Remove wheel from bike</li>
+            <li> Remove the tire</li>
+            <li> Replace the tube</li>
+            <li> Insert the new tube</li>
+            <li> Reset the tire</li> 
+            <li> Inflate the tube</li>
+          </ol>
+        </div>
+        <br>
+        <br>
+        </div>
+    </div>
+
+
+    <!--https://www.web-eau.net/blog/10-team-section-bootstrap-4-snippets-->
+    <div class="container p-4">
+      
+     <h2>meet the team</h2>
+     <p>Who we are</p>  
+    <section id="team">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="images/homer.png" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Homer</h4>
+                                <span>CEO of 20 years</span> 
+                                <span>family man</span>
+                                <span>decades of experience</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="images/bart.jpg " class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Bart</h4>
+                                <span>Salesperson</span>
+                                <span>former pro biker</span> 
+                                <span>extensive knowledge of field</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="images/marge.jpg" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Marge</h4>
+                                <span>Sr. Bike Mechanic</span>
+                                <span>ASE Certified</span> 
+                                <span>over 10 years of experience</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                          <div class="member-img">
+                              <img src="images/lisa.webp" class="img-fluid" alt="">
+                          </div>
+                            <div class="member-info">
+                                <h4>Lisa</h4>
+                                <span>Jr. Bike Mechanic</span>
+                                <span>receiving ASE certification</span> 
+                                <span>3 years apprenticeship experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div class="container">
+        <div class="container-md p-3 my-3 border" style="display:inline-block;">
+            <h1>Book a service</h1>
+            <p>What can we help with</p> 
+        </div>
+
+        <div class = "booking" id="accordion">
+            <div class="booking-card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Book a service</a>
+                </div>
+                <!--From https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select-->
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What do you need?</p>
+                        <select class = "dropdown-services" name="choice">
+                            <option value="" selected>-- Select --</option>
+                            <option value="first">tune up - $29.99</option>
+                            <option value="second">overhaul - $74.99</option>
+                            <option value="third">cleaning - $34.99</option>
+                            <option value="fourth">electronics and tubing - $84.99</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSpecialist">Choose your specialist</a>
+                    </div>
+                    <div id="collapseSpecialist" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>When do you need it?</p>
+                            <!-- Bootstrap has various input components. Some examples are given here: -->
+                            <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                                <select class = "dropdown-services" name="choice" id = "inputSpecialist">
+                                    <option value="" selected>-- Select --</option>
+                                    <option value="homer">Homer</option>
+                                    <option value="bart">Bart</option>
+                                    <option value="marg">Marg</option>
+                                    <option value="lisa">Lisa</option>
+                                </select>
+                            <br>
+                            <small class="text-muted">Please pick a specialist to see their available dates</small>
+                            <br>
+                            <small class="text-muted">If you change your specialist please refresh to see the new specialist's availabilities</small>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="booking-card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseDate">Pick a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>When do you need it?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                         <div class="form-group row">
+                             <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label> 
+                             <input name="dateTimeInput" class="dateTimeInput" id="dateTimeInput" required autocomplete="false" > 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Contact Information</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>How can we reach you?</p>
+                        <form>
+                            <fieldset>
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"><br>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br>
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone"><br>
+                            
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" cols="40" rows="5"></textarea><br><br>
+
+                            <input type="submit" id="submit-btn" value="BOOK!">
+
+                            </fieldset>
+                                 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+@font-face { 
+  font-family: LemonMilk;
+  src: url("LEMONMILK-Regular.otf") format("opentype");
+}
+
+*{ 
+font-family: "LemonMilk";
+}
+
+.navbar-expand-lg   {
+background-color: rgb(255, 236, 129);
+}
+
+.small {
+  font-size: 10px;
+  position: absolute;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+display: flex;
+}
+
+
+.card-title { 
+text-align: center;
+padding: 10px;
+}
+
+.card-text { 
+padding: 10px;
+}
+
+.btn-primary { 
+  background-color: rgb(255, 236, 129); 
+  color: black; 
+}
+
+.btn-primary:hover { 
+  background-color: black; 
+}
+
+.btn-primary:focus { 
+  background-color: black; 
+}
+
+.container-md { 
+background-color: black;
+color:rgb(255, 236, 129)
+}
+
+.card-header { 
+  background-color:rgb(255, 249, 218)
+}
+
+.booking-card { 
+  background-color: white;
+}
+
+.card-link { 
+  color: black; 
+}
+
+.card-link:hover { 
+  color: rgb(139, 139, 139); 
+}
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+.team4 {
+  font-family: "Montserrat", sans-serif;
+	color: rgb(255, 236, 129);
+  font-weight: 300;
+}
+
+#team {
+  padding: 20px 0;
+  text-align: center;
+}
+#team h2 {
+  position: relative;
+  padding: 0px 0px 15px;
+}
+#team p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  margin: 25px 0px 40px;
+}
+#team h2::after {
+  content: '';
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}
+#team .member {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
+#team .member .member-info {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: -200px;
+  transition: 0.4s;
+  padding: 15px 0;
+  background: rgb(255, 236, 129);
+}
+#team .member:hover .member-info {
+  left: 0px;
+  right: 0px;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: black;
+}
+#team .member span {
+  font-style: italic;
+  color: black;
+  display: block;
+  font-size: 10px;
+}
+#team .member .social-links {
+  margin-top: 15px;
+}
+#team .member .social-links a {
+  transition: none;
+  color: #fff;
+}
+#team .member .social-links a:hover {
+  color: #ffc107;
+}
+#team .member .social-links i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* Form element CSS */
+
+label{
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 6px;
+  text-align: right;
+  width: 150px;
+  vertical-align: top;
+}
+
+input#submit-btn {
+  margin-left: 550px;
+}
+.btn-primary {
+  color: #212529;
+  background-color: rgb(255, 236, 129);
+  border-color: #212529;
+}
+a {
+  color: #212529;
+  text-decoration: none;
+  background-color: transparent;
+}
