@@ -31,6 +31,11 @@
     <script src="scripts/index.js"></script>
     <script src="scripts/service.js"></script>
 </head>
+<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+
+<script src="jquery-creditcardvalidator/jquery.creditCardValidator.js"></script>
+<script src="creditCardValidator.js"></script>
+
 
 
 <body>
@@ -293,7 +298,7 @@
                     <a class="card-link" data-toggle="collapse" href="#collapseClientInfo">Contact Information</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
+                    <div class="caqrd-body">
                         <p>How can we reach you?</p>
                         <form>
                             <fieldset>
@@ -309,16 +314,68 @@
                             
                             <label for="comments">Comments:</label>
                             <textarea id="comments" name="comments" cols="40" rows="5"></textarea><br><br>
-
-                            <input type="submit" id="submit-btn" value="BOOK!">
-
                             </fieldset>
                                  
                         </form>
                     </div>
                 </div>
+                
             </div>
+            <div class="booking-card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapsePaymentInfo">Payment Info</a>
+                </div>
+                <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
+                    <div class="caqrd-body">
+                        <p>Payment Info</p>
+                        <form method="post" id="paymentForm">
+                            <p>
+                                <label>Card number</label>
+                                <input type="text" placeholder="1234 5678 9012 3456" id="card_number" >
+                            </p>
+                            <p>
+                                <label>Expiry month</label>
+                                <input type="text" placeholder="MM" maxlength="5" id="expiry_month">
+                            </p>
+                            <p>
+                                <label>Expiry year</label>
+                                <input type="text" placeholder="YYYY" maxlength="5" id="expiry_year">
+                            </p>
+                            <p>
+                                <label>CVV</label>
+                                <input type="text" placeholder="123" maxlength="3" id="cvv">
+                            </p>
+                            <p>
+                                <label>Name on card</label>
+                                <input type="text" placeholder="Codex World" id="name_on_card">
+                            </p>
+                            <input type="submit" value="Validate!">
+
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <input type="submit" id="submit-btn" value="BOOK!">
+
+           
+                
+         
+     
+    </div>
+    <div>
+        
+    </div>
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            
         </div>
+        
     </div>
 
 </body>
