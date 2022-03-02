@@ -63,6 +63,26 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar navbar-expand-lg  text-black">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#services"><img src="images/wrench.jpg" alt="logo" style="width:30px;">Services</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#team"><img src="images/smiley.jpg" alt="logo" style="width:30px;">Meet The Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#accordion"><img src="images/calendar.png" alt="logo" style="width:30px;">Book A Service</a>
+          </li>   
+       </ul>
+      </div>  
+    </nav>
+    <br>
 
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
@@ -71,11 +91,11 @@
     <div class="container">
         <p>For all your bike repair, assembly and safety needs</p>
         <br>
-        <h2>Services offered</h2>
+        <h2><img src="images/wrench.jpg" alt="logo" style="width:30px;">Services offered</h2>
         <a href="#" data-placement="right" data-toggle="tooltip" title="Click buttons for in-depth descriptions!">What we do</a>
         <br>
         <br>
-        <div class = "services">          
+        <div class = "services" id="services">          
         <button title="Click for description of service" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#button1">Tune Ups - $29.99</button>
         <div id="button1" class="collapse">
             <br>
@@ -154,10 +174,10 @@
     <!--https://www.web-eau.net/blog/10-team-section-bootstrap-4-snippets-->
     <div class="container p-4">
       
-     <h2>meet the team</h2>
+     <h2><img src="images/smiley.jpg" alt="logo" style="width:30px;">meet the team</h2>
      <p>Who we are</p>  
     <section id="team">
-            <div class="container">
+            <div class="container" id="team">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                     </div>
@@ -228,7 +248,7 @@
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
         <div class="container-md p-3 my-3 border" style="display:inline-block;">
-            <h1>Book a service</h1>
+            <h1><img src="images/calendar.png" alt="logo" style="width:30px;">Book a service</h1>
             <p>What can we help with</p> 
         </div>
 
@@ -327,11 +347,11 @@
                 </div>
                 <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
                     <div class="caqrd-body">
-                        <p>Payment Info</p>
+                        <p>Payment Info </p>
                         <form method="post" id="paymentForm">
                             <p>
                                 <label>Card number</label>
-                                <input type="text" placeholder="1234 5678 9012 3456" id="card_number" >
+                                <input type="text" title="We ask for your credit card number in case of cancellation or missed appointments. Failure to cancel less than 48 hours before your appointment will result in a fee. Fees vary depending on the original appointment." placeholder="1234 5678 9012 3456" id="card_number">
                             </p>
                             <p>
                                 <label>Expiry month</label>
