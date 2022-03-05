@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="../public/assets/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
 		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="../public/assets/css/style.css">
+		<link rel="stylesheet" href="../public/css/style.css">
 	</head>
 	<body>
 		<div class="navbar">
@@ -18,11 +18,9 @@
 		  
 
 		<div class="wrapper">
-
-            <form action="" id="wizard">
+			
+            <form id="wizard" method="post">
         		<!-- SECTION 1 -->
-                
-
 				<h2></h2>
                 <section>
                     <div class="inner">
@@ -33,23 +31,23 @@
 							</div>
 							<div class="form-row">
 								<div class="form-holder">
-									<input type="text" placeholder="First Name" class="form-control">
+									<input type="text" name="firstName" placeholder="First Name" class="form-control">
 								</div>
 								<div class="form-holder">
-									<input type="text" placeholder="Last Name" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" placeholder="Your Email" class="form-control">
-								</div>
-								<div class="form-holder">
-									<input type="text" placeholder="Phone Number" class="form-control">
+									<input type="text" name="lastName" placeholder="Last Name" class="form-control">
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-holder">
-									<input type="text" placeholder="Age" class="form-control">
+									<input type="text" name="email" placeholder="Your Email" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text"  name="age" placeholder="Age" class="form-control">
 								</div>
 								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
 									<div class="checkbox-tick">
@@ -99,12 +97,12 @@
 							
 							<div class="form-row">
 								<div class="form-holder w-100">
-									<textarea name="" id="" placeholder="What is your first reaction to the website?" class="form-control" style="height: 99px;"></textarea>
+									<textarea name="reaction" id="reaction" placeholder="What is your first reaction to the website?" class="form-control" style="height: 99px;"></textarea>
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-holder w-100">
-									<textarea name="" id="" placeholder="Is there anything you would like to change?" class="form-control" style="height: 99px;"></textarea>
+									<textarea name="change" id="change" placeholder="Is there anything you would like to change?" class="form-control" style="height: 99px;"></textarea>
 								</div>
 							</div>
 						
@@ -122,7 +120,7 @@
 							</div>
 							<div class="form-row">
 								<div class="form-holder w-100">
-									<input type="text" placeholder="What is your favorite brand of coffee?" class="form-control">
+									<input name="faveBrand" id="faveBrand" type="text" placeholder="What is your favorite brand of coffee?" class="form-control">
 								</div>
 							</div>
 							<div class="form-row">
@@ -131,13 +129,13 @@
 										<div class="select-control">How often do you drink coffee?</div>
 										<i class="zmdi zmdi-caret-down"></i>
 									</div>
-									<ul class="dropdown">
-										<li rel="Every day">Every day</li>
-										<li rel="Every other day">Every other day</li>
-										<li rel="Once per week">Once per week</li>
-										<li rel="Occationally">Occationally</li>
-										<li rel="Seldom">Seldom</li>
-										<li rel="Never">Never</li>
+									<ul name="frequencyDrink" class="dropdown">
+										<li name="frequencyDrink" rel="Every day">Every day</li>
+										<li name="frequencyDrink" rel="Every other day">Every other day</li>
+										<li name="frequencyDrink" rel="Once per week">Once per week</li>
+										<li name="frequencyDrink" rel="Occationally">Occationally</li>
+										<li name="frequencyDrink" rel="Seldom">Seldom</li>
+										<li name="frequencyDrink" rel="Never">Never</li>
 
 									</ul>
 								</div>
@@ -146,10 +144,10 @@
 										<div class="select-control">Do you prefer iced or hot coffee?</div>
 										<i class="zmdi zmdi-caret-down"></i>
 									</div>
-									<ul class="dropdown">
-										<li rel="Hot coffee">Hot coffee</li>
-										<li rel="Iced coffee">Iced coffee</li>
-										<li rel="Neither">Neither</li>
+									<ul name="hotOrIced" class="dropdown">
+										<li name="hotOrIced" rel="Hot coffee">Hot coffee</li>
+										<li name="hotOrIced" rel="Iced coffee">Iced coffee</li>
+										<li name="hotOrIced" rel="Neither">Neither</li>
 									</ul>
 								</div>
 							</div>
@@ -188,6 +186,8 @@
 						</div>
 					</div>
                 </section>
+				<button type="submit" class="btn btn-warning" id="bb">Submit</button>
+				<p id="thanks"></p>
             </form>
 			<div class="navbar-b">
 				Website designed by Group 20: Shiza Siddiqui, Tylo Borsboom, Johanna Nilsen, Christopher Mika Aris 
@@ -196,8 +196,8 @@
 
 		<!-- JQUERY -->
         <script src="../public/assets/js/jquery-3.3.1.min.js"></script>
-
-
+		<!-- Post form -->
+		<script src="/assets/action.js"></script>
 		<!-- JQUERY STEP -->
 		<script src="../public/assets/js/jquery.steps.js"></script>
 		<script src="../public/assets/js/main.js"></script>

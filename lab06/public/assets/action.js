@@ -1,14 +1,13 @@
-// jQuery that will "listen" to the html niceSurvey.html
+// jQuery that will "listen" to the html johannassurvey.html
 $(document).ready(function(){
 
-  $('form').on('submit', function(){
+  $('wizard').on('submit', function(){
       
       // var item = $('form input');
       // console.log(item.serializeArray());
-
       $.ajax({
         type: 'POST',
-        url: '/niceSurvey',
+        url: '/johannassurvey',
         data: $(this).serializeArray(),
         success: function(data){
           // do something with the data via front-end framework
