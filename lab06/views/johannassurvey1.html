@@ -1,4 +1,19 @@
-@font-face {
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Website form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="../public/assets/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="../public/css/style.css">
+	</head>
+	<body>
+		<style>
+			@font-face {
     font-family: "Muli-Regular";
     src: url("../fonts/muli/Muli-Regular.ttf"); }
   @font-face {
@@ -460,6 +475,189 @@
       right: 50%;
       transform: translateX(50%);
       bottom: 3%; } }
-  
-  /*# sourceMappingURL=style.css.map */
-  
+		</style>
+		
+		<div class="navbar">
+			<img src="../public/assets/images/logo.png" alt="Logo">		  
+		</div>
+		  
+
+		<div class="wrapper">
+            <form id="wizard" method="post">
+				<h2></h2>
+            <section>
+                    <div class="inner">
+						
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>About you</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="firstName" placeholder="First Name" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="lastName" placeholder="Last Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" name="email" placeholder="Your Email" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text"  name="age" placeholder="Age" class="form-control">
+								</div>
+								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h2></h2>
+
+                <section>
+					
+                    <div class="inner">
+
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Website</h3>
+							</div>
+							<div>
+								<img src="../public/assets/images/webpage.png" alt="">
+							</div>	
+							
+						</div>
+					</div>
+                </section>
+				<h2></h2>
+
+                <section>
+                    <div class="inner">
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Survey</h3>
+							</div>
+							
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="reaction" id="reaction" placeholder="What is your first reaction to the website?" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="change" id="change" placeholder="Is there anything you would like to change?" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+						
+							
+						</div>
+					</div>
+                </section>
+				<h2></h2>
+                <section>
+                    <div class="inner">
+					
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Survey</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input name="faveBrand" id="faveBrand" type="text" placeholder="What is your favorite brand of coffee?" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">How often do you drink coffee?</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul name="frequencyDrink" class="dropdown">
+										<li name="frequencyDrink" rel="Every day">Every day</li>
+										<li name="frequencyDrink" rel="Every other day">Every other day</li>
+										<li name="frequencyDrink" rel="Once per week">Once per week</li>
+										<li name="frequencyDrink" rel="Occationally">Occationally</li>
+										<li name="frequencyDrink" rel="Seldom">Seldom</li>
+										<li name="frequencyDrink" rel="Never">Never</li>
+
+									</ul>
+								</div>
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">Do you prefer iced or hot coffee?</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul name="hotOrIced" class="dropdown">
+										<li name="hotOrIced" rel="Hot coffee">Hot coffee</li>
+										<li name="hotOrIced" rel="Iced coffee">Iced coffee</li>
+										<li name="hotOrIced" rel="Neither">Neither</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+								<div class="checkbox-tick">
+									<div class="qest">What do you have with your coffee? </br></br></div>
+									<label class="milk">
+										<input type="checkbox" name="side" value="milk" checked> Milk<br>
+										<span class="checkmark"></span>
+									</label>
+									<label class="suger">
+										<input type="checkbox" name="side" value="suger">Suger<br>
+										<span class="checkmark"></span>
+									</label>
+									<label class="sweetener">
+										<input type="checkbox" name="side" value="sweetener">Sweetener<br>
+										<span class="checkmark"></span>
+									</label>
+									<label class="other">
+										<input type="checkbox" name="side" value="other"> Other<br>
+										<span class="checkmark"></span>
+									</label>
+									
+									
+									
+								</div>
+							</div>
+
+							
+							<div class="checkbox-circle mt-24">
+								<label>
+									<input type="checkbox" checked>  Please accept that we will save your answers!
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+                </section>
+				<button type="submit" class="btn btn-warning" id="bb">Submit</button>
+				<p id="thanks"></p>
+            </form>
+			<div class="navbar-b">
+				Website designed by Group 20: Shiza Siddiqui, Tylo Borsboom, Johanna Nilsen, Christopher Mika Aris 
+			  </div>
+		</div>
+
+	</body>
+
+
+</html>
