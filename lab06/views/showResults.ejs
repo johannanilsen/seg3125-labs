@@ -5,6 +5,9 @@
 
 <body>
     <h1>Survey analysis</h1>
+    <p>Displayed below are the statistics for coffee drinkers that visit the 
+        cafe!
+    </p>
     <h2>Favorite Brand</h2>
     <ul>
     <% for (var i=0; i<results[0].length; i++){ %>
@@ -17,7 +20,7 @@
         <li><%= results[1][i].hotOrIced %> :  <%= results[1][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Frequency Drink</h2>
+    <h2>Coffee Habits (Drinking Frequency)</h2>
     <ul>
     <% for (var i=0; i<results[2].length; i++){ %>
         <li><%= results[2][i].frequencyDrink %> :  <%= results[2][i].count %></li>

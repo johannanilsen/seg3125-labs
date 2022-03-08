@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-holder">
-                        <input type="text" name="firstName" placeholder="First Name" class="form-control">
+                        <input required type="text" name="firstName" placeholder="First Name" class="form-control">
                     </div>
                     <div class="form-holder">
                         <input type="text" name="lastName" placeholder="Last Name" class="form-control">
@@ -41,10 +41,10 @@
                 </div>
                 <div class="form-row">
                     <div class="form-holder">
-                        <input type="text" name="email" placeholder="Your Email" class="form-control">
+                        <input required  type="text" name="email" placeholder="Your Email" class="form-control">
                     </div>
                     <div class="form-holder">
-                        <input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control">
+                        <input type="text" name="phoneNumber" pattern="^\d{10}$" placeholder="Phone Number" class="form-control">
                     </div>
                 </div>
                 <div class="form-row">
