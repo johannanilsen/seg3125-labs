@@ -8,40 +8,46 @@
     <p>Displayed below are the statistics for coffee drinkers that visit the 
         cafe!
     </p>
-    <h2>Favorite Brand</h2>
-    <ul>
-    <% for (var i=0; i<results[0].length; i++){ %>
-        <li><%= results[0][i].faveBrand %> :  <%= results[0][i].count %></li>
-    <% } %>    
-    </ul>
     <h2>Hot or Iced</h2>
     <ul>
-    <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].hotOrIced %> :  <%= results[1][i].count %></li>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].hotOrIced %> :  <%= results[0][i].count %></li>
     <% } %>    
     </ul>
     <h2>Coffee Habits (Drinking Frequency)</h2>
     <ul>
-    <% for (var i=0; i<results[2].length; i++){ %>
-        <li><%= results[2][i].frequencyDrink %> :  <%= results[2][i].count %></li>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].frequencyDrink %> :  <%= results[1][i].count %></li>
     <% } %>    
     </ul>
     <h2>Age</h2>
     <ul>
-    <% for (var i=0; i<results[3].length; i++){ %>
-        <li><%= results[3][i].age %> :  <%= results[3][i].count %></li>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].age %> :  <%= results[2][i].count %></li>
     <% } %>    
     </ul>
     <h2>Gender</h2>
     <ul>
-    <% for (var i=0; i<results[4].length; i++){ %>
-        <li><%= results[4][i].gender %> :  <%= results[4][i].count %></li>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].gender %> :  <%= results[3][i].count %></li>
     <% } %>    
     </ul>
     <h2>Side</h2>
     <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].side %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Reaction(first glance at webpage)</h2>
+    <ul>
     <% for (var i=0; i<results[5].length; i++){ %>
-        <li><%= results[5][i].side %> :  <%= results[5][i].count %></li>
+        <li><%= results[5][i].reaction %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Changes(suggestions to improve webpage)</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].change %> :  <%= results[6][i].count %></li>
     <% } %>    
     </ul>
 </body>
