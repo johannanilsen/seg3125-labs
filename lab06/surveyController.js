@@ -42,11 +42,15 @@ module.exports = function(app){
     // when a user goes to localhost:3000/analysis
     // serve a template (ejs file) which will include the data from the data files
     app.get('/analysis', function(req, res){
-        var color = readData("color");
-        var fruit = readData("fruit");
-        var animal = readData("animal");
-        res.render('showResults', {results: [color, fruit, animal]});
-        console.log([color, fruit, animal]);
+        var hotOrIced = readData("hotOrIced");
+        var frequencyDrink = readData("frequencyDrink");
+        var age = readData("age");
+        var gender = readData("gender");
+        var side = readData("side");
+		var reaction = readData("reaction");
+		var change =readData("change");
+        res.render('showResults', {results: [hotOrIced, frequencyDrink, age, gender, side, reaction, change]});
+        console.log([hotOrIced, frequencyDrink, age, gender, side, reaction, change]);
     });
 
     // when a user goes to localhost:3000/johannassurvey
@@ -64,7 +68,7 @@ module.exports = function(app){
         for (var key in json){
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "color") && (json[key].length === 2)){
+            if ((key === "side") && (json[key].length === 2)){
                 for (var item in json[key]){
                     combineCounts(key, json[key][item]);
                 }

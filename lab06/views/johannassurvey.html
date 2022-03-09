@@ -6,203 +6,168 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="../public/assets/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+		<link rel="stylesheet" type="text/css" href="/assets/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
 		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="../public/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	</head>
 	<body>
-		<div class="navbar">
-			<img src="../public/assets/images/logo.png" alt="Logo">		  
-		</div>
-		  
 
-		<div class="wrapper">
-			
-            <form id="wizard" method="post">
-        		<!-- SECTION 1 -->
-				<h2></h2>
-                <section>
-                    <div class="inner">
-						
-						<div class="form-content" >
-							<div class="form-header">
-								<h3>About you</h3>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" name="firstName" placeholder="First Name" class="form-control">
-								</div>
-								<div class="form-holder">
-									<input type="text" name="lastName" placeholder="Last Name" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" name="email" placeholder="Your Email" class="form-control">
-								</div>
-								<div class="form-holder">
-									<input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text"  name="age" placeholder="Age" class="form-control">
-								</div>
-								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
-									<div class="checkbox-tick">
-										<label class="male">
-											<input type="radio" name="gender" value="male" checked> Male<br>
-											<span class="checkmark"></span>
-										</label>
-										<label class="female">
-											<input type="radio" name="gender" value="female"> Female<br>
-											<span class="checkmark"></span>
-										</label>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-                </section>
+    <div class="navbar">
+        <img src="/assets/images/logo.png" alt="Logo">		  
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
+</div>
+    <form id="survey" method="post">
 
-                <!-- SECTION 3 -->
-                <h2></h2>
+        <!-- Progress bar -->
+        
 
-                <section>
-					
-                    <div class="inner">
+        <h2></h2>
+        <div class="inner">
+            <div class="form-content" >
+                <div class="form-header">
+                    <h3>About you</h3>
+                </div>
+                <div class="form-row">
+                    <div class="form-holder">
+                        <input required type="text" name="firstName" placeholder="First Name" class="form-control">
+                    </div>
+                    <div class="form-holder">
+                        <input type="text" name="lastName" placeholder="Last Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-holder">
+                        <input required  type="text" name="email" placeholder="Your Email" class="form-control">
+                    </div>
+                    <div class="form-holder">
+                        <input type="text" name="phoneNumber" pattern="^\d{10}$" placeholder="Phone Number" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-holder">
+                        <input type="text"  name="age" placeholder="Age" class="form-control">
+                    </div>
+                    <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+                        <div class="checkbox-tick">
+                            <label class="male">
+                                <input type="radio" name="gender" value="male" checked> Male<br>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="female">
+                                <input type="radio" name="gender" value="female"> Female<br>
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="inner">
 
-						<div class="form-content">
-							<div class="form-header">
-								<h3>Website</h3>
-							</div>
-							<div>
-								<img src="../public/assets/images/webpage.png" alt="">
-							</div>	
-							
-						</div>
-					</div>
-                </section>
-				<h2></h2>
-
-                <section>
-                    <div class="inner">
-						<div class="form-content">
-							<div class="form-header">
-								<h3>Survey</h3>
-							</div>
-							
-							<div class="form-row">
-								<div class="form-holder w-100">
-									<textarea name="reaction" id="reaction" placeholder="What is your first reaction to the website?" class="form-control" style="height: 99px;"></textarea>
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder w-100">
-									<textarea name="change" id="change" placeholder="Is there anything you would like to change?" class="form-control" style="height: 99px;"></textarea>
-								</div>
-							</div>
-						
-							
-						</div>
-					</div>
-                </section>
-				<h2></h2>
-                <section>
-                    <div class="inner">
-					
-						<div class="form-content">
-							<div class="form-header">
-								<h3>Survey</h3>
-							</div>
-							<div class="form-row">
-								<div class="form-holder w-100">
-									<input name="faveBrand" id="faveBrand" type="text" placeholder="What is your favorite brand of coffee?" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="select">
-									<div class="form-holder">
-										<div class="select-control">How often do you drink coffee?</div>
-										<i class="zmdi zmdi-caret-down"></i>
-									</div>
-									<ul name="frequencyDrink" class="dropdown">
-										<li name="frequencyDrink" rel="Every day">Every day</li>
-										<li name="frequencyDrink" rel="Every other day">Every other day</li>
-										<li name="frequencyDrink" rel="Once per week">Once per week</li>
-										<li name="frequencyDrink" rel="Occationally">Occationally</li>
-										<li name="frequencyDrink" rel="Seldom">Seldom</li>
-										<li name="frequencyDrink" rel="Never">Never</li>
-
-									</ul>
-								</div>
-								<div class="select">
-									<div class="form-holder">
-										<div class="select-control">Do you prefer iced or hot coffee?</div>
-										<i class="zmdi zmdi-caret-down"></i>
-									</div>
-									<ul name="hotOrIced" class="dropdown">
-										<li name="hotOrIced" rel="Hot coffee">Hot coffee</li>
-										<li name="hotOrIced" rel="Iced coffee">Iced coffee</li>
-										<li name="hotOrIced" rel="Neither">Neither</li>
-									</ul>
-								</div>
-							</div>
-							<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
-								<div class="checkbox-tick">
-									<div class="qest">What do you have with your coffee? </br></br></div>
-									<label class="milk">
-										<input type="checkbox" name="side" value="milk" checked> Milk<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="suger">
-										<input type="checkbox" name="side" value="suger">Suger<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="sweetener">
-										<input type="checkbox" name="side" value="sweetener">Sweetener<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="other">
-										<input type="checkbox" name="side" value="other"> Other<br>
-										<span class="checkmark"></span>
-									</label>
-									
-									
-									
-								</div>
-							</div>
-
-							
-							<div class="checkbox-circle mt-24">
-								<label>
-									<input type="checkbox" checked>  Please accept that we will save your answers!
-									<span class="checkmark"></span>
-								</label>
-							</div>
-						</div>
-					</div>
-                </section>
-				<button type="submit" class="btn btn-warning" id="bb">Submit</button>
+            <div class="form-content">
+                <div class="form-header">
+                    <h3>Website</h3>
+                </div>
+                <div id="websiteimg">
+                    <a href="https://camposcoffee.com" target="_blank" >
+                        <img src="/assets/images/webpage.png" alt="">                    </a>
+                   
+                </div>	
+                
+            </div>
+        </div>
+        <div class="inner">
+            <div class="form-content">
+                <div class="form-header">
+                    <h3>Survey</h3>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-holder w-100">
+                        <textarea name="reaction" id="reaction" placeholder="What is your first reaction to the website?" class="form-control" style="height: 99px;"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-holder w-100">
+                        <textarea name="change" id="change" placeholder="Is there anything you would like to change?" class="form-control" style="height: 99px;"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="dropdown">
+                        <label for="frequencyDrink">How often do you drink coffee?</label>
+                        <select class="minimal" name="frequencyDrink">
+                            <option name="frequencyDrink" value="Every day">Every day</option>
+                            <option name="frequencyDrink" value="Every other day">Every other day</option>
+                            <option name="frequencyDrink" value="Once per week">Once per week</option>
+                            <option name="frequencyDrink" value="Occationally">Occationally</option>
+                            <option name="frequencyDrink" value="Seldom">Seldom</option>
+                            <option name="frequencyDrink" value="Never">Never</option>
+                        </select>
+                    </div>
+                    <div  class="dropdown">
+                        <label for="hotOrIced">Do you prefer iced or hot coffee?</label>
+                        <select class="minimal" name="hotOrIced">
+                            <option name="hotOrIced" value="Hot coffee">Hot coffee</option>
+                            <option name="hotOrIced" value="Iced coffee">Iced coffee</option>
+                            <option name="hotOrIced"  value="Neither">Neither</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+                    <div class="checkbox-tick">
+                        <div class="qest">What do you have with your coffee? </br></br></div>
+                        <label class="milk">
+                            <input type="checkbox" name="side" value="milk" checked> Milk<br>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="suger">
+                            <input type="checkbox" name="side" value="sugar">Sugar<br>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="sweetener">
+                            <input type="checkbox" name="side" value="sweetener">Sweetener<br>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="other">
+                            <input type="checkbox" name="side" value="other"> Other<br>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="checkbox-circle mt-24">
+                    <label>
+                        <input type="checkbox" checked>  Please accept that we will save your answers!
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+               
+            
+                
+            </div>
+        </div>
+       
+            
+        </div>
+        <button type="submit" class="btn btn-warning" id="bb">Submit</button>
 				<p id="thanks"></p>
-            </form>
-			<div class="navbar-b">
-				Website designed by Group 20: Shiza Siddiqui, Tylo Borsboom, Johanna Nilsen, Christopher Mika Aris 
-			  </div>
-		</div>
+        
+    </form>
 
-		<!-- JQUERY -->
-        <script src="../public/assets/js/jquery-3.3.1.min.js"></script>
-		<!-- Post form -->
-		<script src="/assets/action.js"></script>
-		<!-- JQUERY STEP -->
-		<script src="../public/assets/js/jquery.steps.js"></script>
-		<script src="../public/assets/js/main.js"></script>
-		<!-- Template created and distributed by Colorlib -->
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
 
-	</body>
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 
-</html>
+</body>
