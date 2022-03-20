@@ -1,0 +1,54 @@
+.NavbarItems {
+    background: rgba(114, 203, 255, 0.7);
+    height: 80px;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-weight: bold;
+}
+
+.navbar-logo { 
+    color: #fff;
+    justify-self:start; 
+    margin-left: 20px; 
+    cursor: pointer;
+    background: url('../../images/logo.png');
+    opacity: 1; 
+}
+
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+
+.nav-menu{
+    display:grid; 
+    grid-template-columns: repeat(5, auto); 
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links{
+    color:rgba(53,88,176,1);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+}
+
+.nav-links:hover{
+    background-color: rgba(53,88,176,1);
+    border-radius: 4px; 
+    transition: all 0.2s ease-out;
+    color:white; 
+}
+
+.fa-bars{
+    color:white;
+}

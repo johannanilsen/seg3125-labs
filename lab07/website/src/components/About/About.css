@@ -1,0 +1,40 @@
+.body { 
+    height:100%;
+    background-size:cover;
+  }
+
+  .about-us{ 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .about-title{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    font-family: Lobster;
+    font-weight: Regular;
+    font-size: 96px;
+    text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
+  }
+
+  .info{
+    background-color: rgba(22, 38, 126, 0.5);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: Libre Franklin;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+
+  }
+  
+

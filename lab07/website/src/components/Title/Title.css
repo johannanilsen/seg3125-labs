@@ -1,0 +1,38 @@
+.body { 
+    height:100%;
+    background-size:cover;
+  }
+  .title-page {
+    background: url("../../images/background.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-text{
+    color: white;
+    position: absolute;
+    margin-top: 30rem;
+    margin-left: 20rem;
+    text-align: center;
+    font-family: Lobster;
+    font-weight: Regular;
+    opacity: 1;
+    font-size: 8vw;
+    text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
+  }
+
+  .subtitle{
+      width: 562px;
+      color: white;
+      position: absolute;
+      margin-top: 40rem;
+      margin-left: 35rem;
+      font-family: Libre Franklin;
+      font-weight: Bold;
+      font-size: 1.5vw;
+      opacity: 1;
+      text-align: left;
+  }
+
