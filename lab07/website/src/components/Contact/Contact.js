@@ -1,6 +1,6 @@
 import React, { useRef} from 'react';
-import contactImg from '../images/contact.jpeg'
-import "./contact.css";
+import contactImg from '../../images/contact.jpeg'
+import "./Contact.css";
 
 
 
