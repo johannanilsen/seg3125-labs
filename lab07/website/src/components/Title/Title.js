@@ -9,12 +9,10 @@ class Title extends Component {
 
     render() { 
         return(
-            <div className="title">
                 <div className="title-page">
-                <span class="title-text">Windsor Resort</span>
-                <span class="subtitle">YOUR ADVENTURE AWAITS</span>
-            </div>
-          </div>
+                    <p class="title-text">Windsor Resort</p>
+                    <span class="subtitle">YOUR ADVENTURE AWAITS</span>
+                </div>
         )
     }
 }
