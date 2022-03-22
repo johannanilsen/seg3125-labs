@@ -1,6 +1,12 @@
+
+.About{ 
+  background-color: #E4F4F5;
+}
+
 .body { 
     height:100%;
     background-size:cover;
+    background-color: #E4F4F5;
   }
 
   .about-us{ 
@@ -11,30 +17,51 @@
     
   }
 
+.aboutImage{
+  width: 600px; /* width of container */
+  height: 600px; /* height of container */
+  object-fit: cover;
+  box-shadow: 15px 15px #86D0C6;
+  margin-top:150px;
+  margin-left: 1100px;
+}
+
   .about-title{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     position: absolute;
     margin-top: 10rem;
     margin-left: 10rem;
     font-family: Lobster;
     font-weight: Regular;
-    font-size: 96px;
+    font-size: 85px;
     text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
   }
 
   .info{
-    background-color: rgba(22, 38, 126, 0.5);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     position: absolute;
     margin-top: 20rem;
     margin-left: 10rem;
-    margin-right: 10rem;
+    margin-right: 60rem;
     font-family: Libre Franklin;
     font-weight: Bold;
     font-size: 32px;
     opacity: 1;
     text-align: left;
 
+  }
+
+  .book{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 40rem;
+    margin-left: 10rem;
+    margin-right: 60rem;
+    font-family: Libre Franklin;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
   }
   
 
