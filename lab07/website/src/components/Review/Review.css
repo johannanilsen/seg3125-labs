@@ -1,5 +1,5 @@
 
-.About{ 
+.Review{ 
   background-color: #E4F4F5;
 }
 
@@ -9,7 +9,7 @@
     background-color: #E4F4F5;
   }
 
-  .about-us{ 
+  .review-us{ 
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     
   }
 
-.aboutImage{
+.reviewImage{
   width: 500px; /* width of container */
   height: 500px; /* height of container */
   object-fit: cover;
@@ -26,18 +26,18 @@
   margin-left: 900px;
 }
 
-  .about-title{
+  .review-title{
     color: rgb(0, 0, 0);
     position: absolute;
     margin-top: 10rem;
     margin-left: 10rem;
     font-family: Lobster;
     font-weight: Regular;
-    font-size: 75px;
+    font-size: 40px;
     text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
   }
 
-  .info{
+  .review-body{
     color: rgb(0, 0, 0);
     position: absolute;
     margin-top: 20rem;
@@ -51,18 +51,6 @@
 
   }
 
-  .book{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    margin-top: 35rem;
-    margin-left: 10rem;
-    margin-right: 60rem;
-    font-family: Libre Franklin;
-    font-weight: Bold;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-  }
   .button {
     display: inline-block;
     color: rgb(223, 11, 11);
@@ -78,11 +66,11 @@
     font-size: 12px;
     line-height: 14px;
 }
-.box {
+.box2 {
   background-color: #E3612B;
   display: flex;
  }
- .reviewsButton{
+ .leaveAReviewButton{
    background-color: #E3612B;
  }
   
