@@ -18,7 +18,6 @@ class About extends Component {
                     two saunas and three outdoor hot tubs. We also offer a variety of outdoor excursion packages, including canoeing, 
                     kayaking, hiking, and white water rafting. 
                     </span>
-                    <span className="book">Book your stay with us today!</span>
                     <img className="aboutImage" src={aboutImg} alt="aboutImg" />
                 </div>
           </div>
