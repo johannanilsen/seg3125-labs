@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Title from "./components/Title/Title"
 import Contact from "./components/Contact/Contact"
 import About from "./components/About/About"
+import Book_room from './components/Book_room/Book_room'
 import background from './images/background.png'
 import Review from './components/Review/Review'
 
@@ -27,6 +28,11 @@ function App() {
           <Route path="/contact">
               <Contact/>
           </Route>
+
+          <Route path="/book-room">
+              <Book_room/>
+          </Route>
+
         </Switch>
           <Route path="/review">
               <Review/>

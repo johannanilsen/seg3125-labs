@@ -1,0 +1,27 @@
+export const MenuItems = [ 
+    {
+        title: 'Single room', 
+        price: 190
+    }, 
+    {
+        title: 'Double room', 
+        price: 210
+    }, 
+    {
+        title: 'Triple room', 
+        price: 250
+    }, 
+    {
+        title: 'Suite', 
+        price: 280
+    }, 
+    {
+        title: 'Studio', 
+        price: 305
+    }, 
+    {
+        title: 'Cabana', 
+        price: 390
+    }, 
+
+]

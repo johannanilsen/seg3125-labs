@@ -1,0 +1,122 @@
+
+.book-room{ 
+    background-position: center;
+    background-image:url("../../images/book-room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.bookImg{
+    width: 600px; /* width of container */
+    height: 400px; /* height of container */
+    object-fit: cover;
+    box-shadow: 15px 15px #86D0C6;
+    margin-top:30px;
+    margin-bottom:50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+
+.room-type{
+    display: inline-block;
+}
+
+.guests{ 
+    display: inline-block;
+}
+
+.total-title{ 
+    text-align: center;
+    margin-left:20px;
+    margin-bottom:0px;
+    font-size:30px;
+}
+
+.total-prices{ 
+    margin-left:30px;
+}
+
+.total{ 
+    display: inline-block;
+    margin-left:50px;
+    margin-top:90px;
+    width:600px;
+    background-color: rgba(255, 199, 126, 0.95);
+}
+.book-room-form{
+    margin-top:80px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    flex-direction: column;
+    width: 700px;
+    margin-left: 30px;
+    background-color: rgb(126, 182, 255, 0.95);
+    padding: 0px 12px;
+    display: inline-block;
+    font-size: 12px;
+    float: left; 
+}
+
+
+.book-title{
+    margin-left: 10px;
+    font-family: Lobster;
+    font-weight: Regular;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:0px;
+    color:black;
+}
+
+#room-type, #book-input, #guests, #name, #email, #checkout, #checkin, #creditcardNum, #cvv {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:5px;
+    margin-bottom: 0px;
+}
+
+
+#creditcardNum, #cvv {
+    margin-top: 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+#cvv{
+    margin-left: 10px;
+    width: 150px;
+    display: inline-block;
+}
+
+#submit-button{ 
+    background-color: #0407aa;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    margin-left:280px;
+    margin-top:0px;
+    border-radius: 12px;
+}
+
+#submit-button:hover{
+    background-color: #ffffff;
+    color:  #0407aa;
+}
+
+
+
+
+
