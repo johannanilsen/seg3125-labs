@@ -37,15 +37,15 @@
     display: flex;
     flex-direction: column;
     width: 600px;
-    margin-left: 100px;
+    margin-bottom: 160px;
+    margin-left:50px; 
 
 }
 .title{
-    margin-left: 100px;
-    margin-bottom: 40px;
     font-family: Lobster;
     font-weight: Regular;
     font-size: 46px;
+    margin-left:50px; 
 }
 
 input{

@@ -7,11 +7,36 @@ import "./Book_room.css";
 
 
 function Book_room() {
-    const handleSubmit = (event) => {
-        event.preventDefault()
-    }
+    const[roomType, setRoomPrice, setTax, setTotal] = useState(0)
     
+    var roomPrice = useState(0)
+    var tax = useState(0)
+    var total = useState(0)
+
+    const CalculateTotal = (e) => {
+       
+        alert(e.target.value)
+
+        if (e.target.value === "single")
+        {
+            //roomPrice = 189.99
+            //tax = 24.7
+            //total = 214.70
+            setRoomPrice(roomPrice = 189.99)
+            setTax(24.70)
+            setTotal(214.70) 
+        } 
+        if (e.target.value === "double")
+        {
+            setRoomPrice({roomPrice:240.99})
+            setRoomPrice(219.99)
+            setTax(28.60)
+            setTotal(248.6) 
+        } 
+    }
+
    return(
+    
     <div className="book-room">    
     
     <form className="book-room-form">
@@ -43,7 +68,7 @@ function Book_room() {
             <br></br>
             <label for="room-type">Room type</label>
             <br></br>
-            <select id="room-type" name="room-list" form="room-form">
+            <select id="room-type" onChange={CalculateTotal} name="room-list" form="room-form">
                 <option value="single">Single room</option>
                 <option value="double">Double room</option>
                 <option value="triple">Triple room</option>
@@ -88,9 +113,9 @@ function Book_room() {
     <div className="total">
         <h1 className="total-title">Total Cost</h1>
         <div className="total-prices">
-            <h2>Room total: </h2>
-            <h2>Taxes: </h2>
-            <h2 className="total-label">Total: </h2>
+            <h2 >Room total: {roomPrice}</h2>
+            <h2>Taxes: {tax}</h2>
+            <h2 className="total-label">Total: {total}</h2>
         </div>
     </div>
 </div>

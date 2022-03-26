@@ -28,10 +28,8 @@ function Conatct() {
     <div>
         <img className={"conatctImage"} src={contactImg} alt="contactImg" />
     </div>
-    <div>
+        <form className="contactForm">
         <h1 className={"title"} >Contact us</h1>
-        <form className="form">
-        
             <div className={"contactForm"}>
                 <input
                     className={"inputBar"}
@@ -71,7 +69,7 @@ function Conatct() {
             </div>
             
         </form>
-  </div>
+        
   </div>
  )
 }
