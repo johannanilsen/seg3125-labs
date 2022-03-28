@@ -12,16 +12,15 @@ class Review extends Component {
         return(
             <div className="Review">
                 <div className="customer-reviews">
-                    <span className="review-title">What people are saying review Windsor Resort: Over 3000 5-star reviews and counting!</span>
-					<br></br>
-					<br></br>
-					<br></br>
+                    <span className="review-title">What people are saying about Windsor Resort</span>
 					<br></br>
 					<br></br>
 					<br></br>
 					<br></br>
 					<span className="review-subtitle">Over 3000 5-star reviews and counting!</span>
-                    <span className="review-body">I had the best time ever! -Tina
+                    <span className="review-body">I had the best time ever!
+					<br></br>
+					&nbsp;&nbsp;- Tina
 					<br></br>
 					<br></br>
 					<br></br>
