@@ -32,7 +32,7 @@ class Review extends Component {
 					<br></br>
 					<br></br>
 					<div class="box1">
-					<form action='http://localhost:3001/feedback'>
+					<form action='/feedback'>
 			    		<button type="submit" className={"button"}><b>Enjoy your stay? Click here to leave a review!</b></button>
 					</form>
 					</div> 
