@@ -1,0 +1,74 @@
+
+.feedbackImage{
+
+        width: 600px; /* width of container */
+        height: 600px; /* height of container */
+        object-fit: cover;
+        box-shadow: 15px 15px #86D0C6;
+        margin-left: 200px;
+
+  
+    }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #E4F4F5;
+    height: 100%;
+    padding-top: 200px;
+    height:79vh;
+}
+
+.button{
+    width: 100%;
+  background-color: #D7ECFF;
+  box-shadow: 5px 5px #86D0C6;
+
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.feedbackForm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 160px;
+    margin-left:50px; 
+
+}
+.title{
+    font-family: Lobster;
+    font-weight: Regular;
+    font-size: 46px;
+    margin-left:50px; 
+}
+
+input{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    height: 100px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}

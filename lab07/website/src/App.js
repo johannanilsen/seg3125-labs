@@ -7,6 +7,7 @@ import About from "./components/About/About"
 import Book_room from './components/Book_room/Book_room'
 import background from './images/background.png'
 import Review from './components/Review/Review'
+import Feedback from './components/Feedback/Feedback'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -36,6 +37,9 @@ function App() {
         </Switch>
           <Route path="/review">
               <Review/>
+          </Route>
+          <Route path="/feedback">
+              <Feedback/>
           </Route>
         </BrowserRouter>
         

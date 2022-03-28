@@ -72,12 +72,10 @@
     font-size: 12px;
     line-height: 14px;
 }
-.box {
-  background-color: #E3612B;
-  display: flex;
- }
- .reviewsButton{
+ 
+.input{
    background-color: #E3612B;
+   fill: #E3612B;
  }
   
 

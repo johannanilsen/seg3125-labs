@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import './Review.css'
-import aboutImg from '../../images/aboutImg.jpg'
+import reviewImg from '../../images/review.jpeg'
 
 class Review extends Component { 
     state = { clicked:false }
@@ -12,7 +12,15 @@ class Review extends Component {
         return(
             <div className="Review">
                 <div className="customer-reviews">
-                    <span className="review-title">What people are saying about Windsor Resort: Over 3000 5-star reviews and counting!</span>
+                    <span className="review-title">What people are saying review Windsor Resort: Over 3000 5-star reviews and counting!</span>
+					<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+					<span className="review-subtitle">Over 3000 5-star reviews and counting!</span>
                     <span className="review-body">I had the best time ever! -Tina
 					<br></br>
 					<br></br>
@@ -23,10 +31,13 @@ class Review extends Component {
 					<br></br>
 					<br></br>
 					<br></br>
-					<div class="box2">
-						<button class="leaveAReviewButton"><span>Enjoy your stay? Click here to leave a review!</span></button>
+					<div class="box1">
+					<form action='http://localhost:3001/feedback'>
+			    		<button type="submit" className={"button"}><b>Enjoy your stay? Click here to leave a review!</b></button>
+					</form>
 					</div> 
                     </span>
+					 <img className="reviewImg" src={reviewImg} alt="reviewImg" />
                 </div>
           </div>
         )

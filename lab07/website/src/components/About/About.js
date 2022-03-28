@@ -19,7 +19,9 @@ class About extends Component {
                     two saunas and three outdoor hot tubs. We also offer a variety of outdoor excursion packages, including canoeing, 
                     kayaking, hiking, and white water rafting.
 					<div class="box1">
-						<button class="reviewsButton"><span>Read our reviews</span></button>
+						<form action='http://localhost:3001/review'>
+						    <button type="submit" className={"button"}><b>Read our reviews!</b></button>
+						</form>
 					</div> 
                     </span>
                     <img className="aboutImage" src={aboutImg} alt="aboutImg" />
