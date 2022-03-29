@@ -12,30 +12,28 @@ class Review extends Component {
         return(
             <div className="Review">
                 <div className="customer-reviews">
-                    <span className="review-title">What people are saying about Windsor Resort</span>
+                    <h3 className="review-title">What people are saying about Windsor Resort</h3>
 					<br></br>
 					<br></br>
 					<br></br>
-					<br></br>
-					<span className="review-subtitle">Over 3000 5-star reviews and counting!</span>
-                    <span className="review-body">I had the best time ever!
-					<br></br>
-					&nbsp;&nbsp;- Tina
+					<h3 className="review-subtitle">Over 3000 5-star reviews and counting!</h3>
+ 		   			<span className="info">Highly recommend bringing the whole family, there is something here for everyone to enjoy. - Paul, Winnipeg, MB</span>
 					<br></br>
 					<br></br>
 					<br></br>
+					<span className="info">Everything was as promised. What a great way to take in the raw beauty of Alaska!- Moemi, Kyoto, Japan</span>
 					<br></br>
 					<br></br>
 					<br></br>
-					<br></br>
+					<span className="info">I had the best time ever!- Tina, Saguaro, AZ
 					<br></br>
 					<br></br>
 					<div class="box1">
 					<form action='/feedback'>
 			    		<button type="submit" className={"button"}><b>Enjoy your stay? Click here to leave a review!</b></button>
 					</form>
-					</div> 
-                    </span>
+					</div>
+					</span>
 					 <img className="reviewImg" src={reviewImg} alt="reviewImg" />
                 </div>
           </div>

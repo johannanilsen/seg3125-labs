@@ -20,7 +20,7 @@ function Feedback() {
               message: messageRef.current.value
               }
         console.log("tadaaa!: \n" + JSON.stringify(data) + "Your data 😎")
-        alert("Thank you for the review" + data.firstName +"! Your review helps to improve our standard of care and aids others in choosing the right vaction for them!")
+        alert("Thank you for the review " + data.firstName +"! Your review helps to improve our standard of care and aids others in choosing the right vaction for them!")
   }
     
    return(

@@ -10,7 +10,7 @@
     background-color: #E4F4F5;
   }
 
-  .review-us{ 
+  .customer-reviews{ 
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   height: 500px; /* height of container */
   object-fit: cover;
   box-shadow: 15px 15px #86D0C6;
-  margin-top:150px;
+  margin-top: 25px;
   margin-left: 900px;
 }
 
@@ -35,6 +35,7 @@
     font-family: Lobster;
     font-weight: Regular;
     font-size: 40px;
+    text-align: center;
     text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
   }
   .review-subtitle{
@@ -45,6 +46,7 @@
     font-family: Libre Franklin;
     font-weight: Regular;
     font-size: 24px;
+    text-align: center;
     text-shadow: -1px -1px 0 rgb(12, 24, 92), 1px -1px 0 rgb(12, 24, 92), -1px 1px 0 rgb(12, 24, 92), 1px 1px 0 rgb(12, 24, 92);
   }
 
@@ -58,13 +60,17 @@
     font-weight: Bold;
     font-size: 20px;
     opacity: 1;
-    text-align: left;
+    text-align: center;
 
   }
-.box2 {
-  background-color: #E3612B;
-  display: flex;
- }
+.button{
+  max-width: 400px;
+}
+.info{
+  font-size: small;
+  text-align: left;
+  position: absolute;
+}
 
   
 
