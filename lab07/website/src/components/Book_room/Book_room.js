@@ -77,7 +77,7 @@ function Book_room() {
             <br></br>
             <label for="room-type">Room type</label>
             <br></br>
-            <select id="room-type" onChange={CalculateTotal} name="room-list" form="room-form">
+            <select id="room-type" name="room-list" form="room-form">
                 <option value="single">Single room - $145 per night</option>
                 <option value="double">Double room - $190 per night</option>
                 <option value="triple">Triple room - $220 per night</option>
