@@ -9,18 +9,6 @@
 }
 
 
-.bookImg{
-    width: 600px; /* width of container */
-    height: 400px; /* height of container */
-    object-fit: cover;
-    box-shadow: 15px 15px #86D0C6;
-    margin-top:30px;
-    margin-bottom:50px;
-    margin-left: 50px;
-    position: absolute;
-}
-
-
 .room-type{
     display: inline-block;
 }
@@ -53,7 +41,7 @@
     font-weight: bold;
     flex-direction: column;
     width: 700px;
-    margin-left: 30px;
+    margin-left: 400px;
     background-color: rgb(126, 182, 255, 0.95);
     padding: 0px 12px;
     display: inline-block;

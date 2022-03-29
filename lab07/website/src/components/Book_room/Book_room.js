@@ -14,27 +14,9 @@ function Book_room() {
     var total = useState(0)
 
     const CalculateTotal = (e) => {
-       
-        alert(e.target.value)
-
-        if (e.target.value === "single")
-        {
-            //roomPrice = 189.99
-            //tax = 24.7
-            //total = 214.70
-            setRoomPrice(roomPrice = 189.99)
-            setTax(24.70)
-            setTotal(214.70) 
-        } 
-        if (e.target.value === "double")
-        {
-            setRoomPrice({roomPrice:240.99})
-            setRoomPrice(219.99)
-            setTax(28.60)
-            setTotal(248.6) 
-        } 
+        
+        alert("Thank you for booking with Windsor Resort!")
     }
-
    return(
     
     <div className="book-room">    
@@ -69,13 +51,13 @@ function Book_room() {
             <label for="room-type">Room type</label>
             <br></br>
             <select id="room-type" onChange={CalculateTotal} name="room-list" form="room-form">
-                <option value="single">Single room</option>
-                <option value="double">Double room</option>
-                <option value="triple">Triple room</option>
-                <option value="suite">Suite</option>
-                <option value="studio">Studio</option>
-                <option value="cabana">Cabana</option>
-                <option value="villa">Villa</option>
+                <option value="single">Single room - $145 per night</option>
+                <option value="double">Double room - $190 per night</option>
+                <option value="triple">Triple room - $220 per night</option>
+                <option value="suite">Suite - $250 per night</option>
+                <option value="studio">Studio - $295 per night</option>
+                <option value="cabana">Cabana - $340 per night</option>
+                <option value="villa">Villa - $390 per night</option>
             </select>
             <br></br>
             <br></br>
@@ -106,18 +88,10 @@ function Book_room() {
             <label for="cardHolder">Card Holder</label>
             <br></br>
             <input type="text" id ="cardHolder" placeholder="Jane Doe"/>
-            <button id="submit-button">SUBMIT</button>
+            <button id="submit-button" onClick={CalculateTotal}>SUBMIT</button>
         </div>
     </form>
 
-    <div className="total">
-        <h1 className="total-title">Total Cost</h1>
-        <div className="total-prices">
-            <h2 >Room total: {roomPrice}</h2>
-            <h2>Taxes: {tax}</h2>
-            <h2 className="total-label">Total: {total}</h2>
-        </div>
-    </div>
 </div>
 
  )
