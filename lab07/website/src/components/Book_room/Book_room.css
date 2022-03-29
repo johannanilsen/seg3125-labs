@@ -13,8 +13,9 @@
     display: inline-block;
 }
 
-.guests{ 
+#guests{ 
     display: inline-block;
+    text-align: center;
 }
 
 .total-title{ 

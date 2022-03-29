@@ -13,9 +13,34 @@ function Book_room() {
     var tax = useState(0)
     var total = useState(0)
 
+    const nameRef = useRef(null)
+    const emailRef = useRef(null)
+    const creditCardRef = useRef(null)
+    const cvvRef = useRef(null)
+    const cardHolderRef = useRef(null)
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+  
+        const data = {
+              name: nameRef.current.value,
+              email: emailRef.current.value,
+              creditCard: creditCardRef.current.value, 
+              cvv: cvvRef.current.value,
+              cardHolder: cardHolderRef.current.value
+              }
+        }
+
     const CalculateTotal = (e) => {
+
+        if(nameRef === '' || emailRef === '' || creditCardRef === '' || cvvRef ==='' || cardHolderRef === ''){ 
+            alert("ERROR: Please fill out all the fields.")
+           
+        }  
+        else { 
+            alert("Thank you for booking with Windsor Resort!")
+        }
         
-        alert("Thank you for booking with Windsor Resort!")
     }
    return(
     
@@ -33,6 +58,7 @@ function Book_room() {
                 id="name"
                 tabIndex="1"
                 placeholder="Jane Doe"
+                ref={nameRef}
               
             />
             <br></br>
@@ -45,6 +71,7 @@ function Book_room() {
                 id="email"
                 placeholder="jdoe123@gmail.com"
                 tabIndex="3"
+                ref = {emailRef}
             />
              <br></br>
             <br></br>
@@ -81,8 +108,8 @@ function Book_room() {
             <br></br>
             <label for="creditcardNum">Credit card number and CVV</label>
             <br></br>
-            <input type="text" id ="creditcardNum"  placeholder="Credit card number"/>
-            <input type="text" id="cvv"  placeholder="CVV"/>
+            <input type="text" id ="creditcardNum" ref={creditCardRef} placeholder="Credit card number" pattern="^4[0-9]{12}(?:[0-9]{3})?$" onChange="checkFilled()" x-autocompletetype="cc-number"/>
+            <input type="text" id="cvv" ref={cvvRef} placeholder="CVV"/>
             <br></br>
             <br></br>
             <label for="cardHolder">Card Holder</label>
