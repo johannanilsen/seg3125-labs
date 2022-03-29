@@ -73,4 +73,19 @@
 }
 
   
+.translate {
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #86D0C6;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.translate:disabled{
+ opacity: 0.6;
+ cursor: not-allowed;
+}
 
