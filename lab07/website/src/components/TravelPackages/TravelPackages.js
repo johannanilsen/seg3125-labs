@@ -5,7 +5,6 @@ import Cards from "./Cards.js";
 function TravelPackages() {
     return (
         <div className="travel-packages">
-        <h1>Travel Packages</h1>
         <Cards />
         </div>
         

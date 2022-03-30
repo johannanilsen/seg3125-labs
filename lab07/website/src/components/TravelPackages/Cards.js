@@ -13,19 +13,19 @@ function Cards() {
                     src='images/cardbackgrnd.png'
                     text='Sightseeing'
                     label= 'Adventure'
-                    path = '/booking'
+                    path = '/book-room'
                     />
                     <CardItem 
                     src='/images/cardbackgrnd-2.png'
                     text='Pier Walk'
                     label= 'Dining'
-                    path = '/booking'
+                    path = '/book-room'
                     />
                     <CardItem 
                     src='/images/cardbackgrnd-3.png'
                     text='Nightlife'
                     label= 'Entertainment'
-                    path = '/booking'
+                    path = '/book-room'
                     />
                 </ul>
             </div>

@@ -21,7 +21,7 @@ export const MenuItems = [
     }, 
     {
         title: 'TRAVEL PACKAGES', 
-        url: '#', 
+        url: '/travel-packages', 
         cName: 'nav-links'
     }, 
     {
