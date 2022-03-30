@@ -17,7 +17,7 @@ class Review extends Component {
         return(
             <div className="Review">
                 <div className="customer-reviews">
-                    <h3 className="review-title">{this.state.changeLangugae ? "Vad folk säger om Windsor Resort" : "What people are saying about Windsor Resort"}</h3>
+                    <h3 className="review-title">{this.state.changeLangugae ? "Recensioner" : "Reviews"}</h3>
 					<br></br>
 					<br></br>
 					<br></br>
