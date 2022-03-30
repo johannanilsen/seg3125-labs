@@ -10,6 +10,7 @@ import Review from './components/Review/Review'
 import Feedback from './components/Feedback/Feedback'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import TravelPackages from './components/TravelPackages/TravelPackages'
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
 
           <Route path="/book-room">
               <Book_room/>
+          </Route>
+
+          <Route path="/travel-packages">
+              <TravelPackages />
           </Route>
 
         </Switch>
